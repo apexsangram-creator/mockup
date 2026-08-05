@@ -280,6 +280,95 @@ background: #F3F4F6 !important;
 .elementor-element-f45d2f5 {
     display: none !important;
 }
+/* Popular Posts activity filters. */
+.porto-popular-posts .latest-piblished__play {
+    display: none;
+}
+.porto-popular-posts .latest-piblished__area {
+    background: linear-gradient(135deg, #ff7a18 0%, #ff5f00 46%, #ec4f17 100%) !important;
+    isolation: isolate;
+    overflow: hidden;
+    position: relative;
+}
+.porto-popular-posts .latest-piblished__area::before,
+.porto-popular-posts .latest-piblished__area::after {
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 50%;
+    content: "";
+    height: 520px;
+    opacity: 0.46;
+    position: absolute;
+    transform: rotate(-18deg);
+    width: 980px;
+    z-index: -1;
+}
+.porto-popular-posts .latest-piblished__area::before {
+    right: -390px;
+    top: -320px;
+}
+.porto-popular-posts .latest-piblished__area::after {
+    bottom: -390px;
+    left: -420px;
+}
+.porto-popular-posts .latest-piblished__area .container {
+    position: relative;
+    z-index: 1;
+}
+.porto-popular-posts .latest-piblished__item {
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 14px 28px rgba(98, 29, 2, 0.17);
+}
+.porto-popular-posts .latest-piblished__list {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 4px 42px 8px 0;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    white-space: nowrap;
+}
+.porto-popular-posts .latest-piblished__list::-webkit-scrollbar {
+    display: none;
+}
+.porto-popular-posts .latest-piblished__list button {
+    border-radius: 999px;
+    flex: 0 0 auto;
+    padding: 7px 10px;
+    transition: background 180ms ease, color 180ms ease;
+}
+.porto-popular-posts .latest-piblished__list button.active {
+    background: var(--white);
+    color: var(--primary4);
+}
+.porto-popular-posts .latest-piblished__top {
+    position: relative;
+}
+.porto-popular-filter-arrows {
+    display: flex;
+    gap: 6px;
+    position: absolute;
+    right: 0;
+    top: -16px;
+    transform: none;
+}
+.porto-popular-filter-arrows button {
+    align-items: center;
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 50%;
+    color: var(--white);
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    height: 30px;
+    justify-content: center;
+    width: 30px;
+}
+.porto-popular-filter-arrows button:hover {
+    background: var(--white);
+    color: var(--primary4);
+}
 /* Three-card Latest Updates carousel. */
 .porto-card-carousel .elementor-element-3ab29e4 {
     overflow: hidden;
@@ -2042,7 +2131,7 @@ By pressing the subscribe button you agree to our
 				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-4bc9dd9 e-con-full e-flex e-con e-parent" data-id="4bc9dd9" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-4bc9dd9 porto-popular-posts e-con-full e-flex e-con e-parent" data-id="4bc9dd9" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-21d1dbd elementor-widget elementor-widget-ebuzz_gallery_post" data-id="21d1dbd" data-element_type="widget" data-e-type="widget" data-widget_type="ebuzz_gallery_post.default">
 				<div class="elementor-widget-container">
 					
@@ -2058,22 +2147,29 @@ By pressing the subscribe button you agree to our
 
                         <div class="latest-piblished__list filter-tab wow fadeInUp" data-wow-duration="0.7s" data-wow-delay="0.2s">
                             <button class="active" data-filter="*">All</button>
-                                                            <button data-filter=".beautys">
-                                    Beautys                                </button>
-                                                            <button data-filter=".camera">
-                                    Camera                                </button>
-                                                            <button data-filter=".cars">
-                                    Cars                                </button>
-                                                            <button data-filter=".couple">
-                                    Couple                                </button>
-                                                            <button data-filter=".friends">
-                                    Friends                                </button>
-                                                            <button data-filter=".keyboard">
-                                    Keyboard                                </button>
-                                                            <button data-filter=".sea">
-                                    Sea                                </button>
-                                                            <button data-filter=".time">
-                                    Time                                </button>
+                            <button data-filter="*">Art</button>
+                            <button data-filter="*">Bars</button>
+                            <button data-filter="*">Beaches</button>
+                            <button data-filter="*">Cafes</button>
+                            <button data-filter="*">Drinks</button>
+                            <button data-filter="*">Education</button>
+                            <button data-filter="*">Finance</button>
+                            <button data-filter="*">Food</button>
+                            <button data-filter="*">Kids</button>
+                            <button data-filter="*">Language</button>
+                            <button data-filter="*">Music</button>
+                            <button data-filter="*">Pastries</button>
+                            <button data-filter="*">Pets</button>
+                            <button data-filter="*">Places</button>
+                            <button data-filter="*">Restaurants</button>
+                            <button data-filter="*">Rooftop</button>
+                            <button data-filter="*">Services</button>
+                            <button data-filter="*">Sport</button>
+                            <button data-filter="*">Traditions</button>
+                            <button data-filter="*">Trips</button>
+                            <button data-filter="*">Vegetarian</button>
+                            <button data-filter="*">Wine</button>
+                            <button data-filter="*">Work</button>
                                                     </div>
 
                     </div>
@@ -3793,6 +3889,30 @@ document.addEventListener('DOMContentLoaded', function () {
         footerStart.parentNode.insertBefore(joinUsSections[0], footerStart);
         Array.prototype.slice.call(joinUsSections, 1).forEach(function (section) {
             section.style.display = 'none';
+        });
+    }
+
+    var popularPosts = document.querySelector('.porto-popular-posts');
+    if (popularPosts) {
+        var filterList = popularPosts.querySelector('.latest-piblished__list');
+        var filterHeader = popularPosts.querySelector('.latest-piblished__top');
+        var filterArrows = document.createElement('div');
+        filterArrows.className = 'porto-popular-filter-arrows';
+        filterArrows.innerHTML = '<button type="button" aria-label="Previous categories">‹</button><button type="button" aria-label="Next categories">›</button>';
+        filterHeader.appendChild(filterArrows);
+        filterArrows.children[0].addEventListener('click', function () {
+            filterList.scrollBy({ left: -260, behavior: 'smooth' });
+        });
+        filterArrows.children[1].addEventListener('click', function () {
+            filterList.scrollBy({ left: 260, behavior: 'smooth' });
+        });
+        filterList.querySelectorAll('button').forEach(function (filterButton) {
+            filterButton.addEventListener('click', function () {
+                filterList.querySelectorAll('button').forEach(function (button) {
+                    button.classList.remove('active');
+                });
+                filterButton.classList.add('active');
+            });
         });
     }
 
