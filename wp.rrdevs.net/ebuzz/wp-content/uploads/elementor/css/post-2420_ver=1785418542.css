@@ -1,0 +1,18 @@
+.elementor-2420 .elementor-element.elementor-element-80d58ec{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-2420 .elementor-element.elementor-element-ec4d2bb .rr-btn .btn-wrap span{color:#000000;}.elementor-2420 .elementor-element.elementor-element-ec4d2bb .rr-btn{background-color:#FFFFFF;}.elementor-2420 .elementor-element.elementor-element-ec4d2bb .rr-btn:hover .btn-wrap span{color:#FFFFFF;}.header-6__weather p b {
+   font-size: 24px;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 5px;
+    display: block;
+    color: var(--secondary);
+    font-family: var(--font_header);
+}
+
+
+.header-6__weather p {
+   font-size: 16px;
+    color: var(--secondary);
+    font-family: var(--font_header);
+    font-family: 500;
+    margin: 0px;
+}
