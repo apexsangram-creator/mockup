@@ -68,6 +68,7 @@ html:root{
 /*# sourceURL=ebuzz-custom-inline-css */
 </style>
 <link rel="stylesheet" id="ebuzz-fonts-css" href="../../../fonts.googleapis.com/css2/family=Inter_wght@300;400;500;600;700;800;900&amp;display=swap&amp;ver=1785925690.css" type="text/css" media="all">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&amp;display=swap">
 <link rel="stylesheet" id="bootstrap-css" href="../wp-content/themes/ebuzz/assets/css/bootstrap.min_ver=6.9.5.css" type="text/css" media="all">
 <link rel="stylesheet" id="fontawesome-css" href="../wp-content/themes/ebuzz/assets/css/fontawesome-pro.min_ver=6.9.5.css" type="text/css" media="all">
 <link rel="stylesheet" id="swiper-css" href="../wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min_ver=8.4.5.css" type="text/css" media="all">
@@ -130,50 +131,103 @@ background: #F3F4F6 !important;
 
 .breadcurmb_navxt i {
     margin: 0 5px;
-}		</style>
-		<style id="kirki-inline-styles">.progress-wrap::after{background:#DC2626;color:#ffffff;}.sk-three-bounce{background:rgba(0, 0, 0);}.sk-three-bounce .sk-child{background:rgba(255, 255, 255);}.breadcrumb-section__area .breadcrumb-section__content .breadcrumb-section__title{color:#0f0f0f;}.breadcrumb-section__area.grey-bg{background:#ffffff;background-color:#ffffff;}@media (max-width: 767px){.breadcrumb-section__content{padding-top:37px;padding-bottom:37px;}}@media (min-width: 768px) and (max-width: 1023px){.breadcrumb-section__content{padding-top:37px;padding-bottom:37px;}}@media (min-width: 1024px){.breadcrumb-section__content{padding-top:52px;padding-bottom:52px;}}</style>
-<style>
-.header-3__activities {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px 12px;
-    align-items: center;
+}
+
+/* Activity navigation: spacious on wide screens and naturally wrapping on narrower ones. */
+.header-4 .header__top {
+    padding: 12px 0;
+}
+.header-4 .header__top .row {
+    row-gap: 12px;
+}
+.header-4 .header__top .activity-nav,
+.header-4 .header__top .activity-social {
     width: 100%;
 }
-.header-3__activities .activity-pill {
-    margin: 0;
+.header-4 .header-3__top-left {
+    width: 100%;
 }
-.header-3__activities .activity-pill button {
-    border: 1px solid rgba(17, 24, 39, 0.12);
-    border-radius: 999px;
-    background: linear-gradient(135deg, #ffffff 0%, #f7f3eb 100%);
-    color: #1f2937;
-    padding: 8px 13px;
-    font-size: 0.9rem;
+.activity-header-layout {
+    align-items: center;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    width: 100%;
+}
+.activity-header-layout .header-3__cat {
+    gap: 8px;
+}
+.activity-group--left {
+    justify-content: flex-end;
+}
+.activity-group--right {
+    justify-content: flex-start;
+}
+.activity-header-logo {
+    color: var(--white);
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
     font-weight: 700;
-    letter-spacing: 0.01em;
-    box-shadow: 0 6px 16px rgba(17, 24, 39, 0.08);
-    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-    text-transform: capitalize;
+    letter-spacing: -0.8px;
+    line-height: 1;
+    white-space: nowrap;
 }
-.header-3__activities .activity-pill button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(17, 24, 39, 0.14);
-    background: linear-gradient(135deg, #fff8e8 0%, #ffe8c4 100%);
+.header-4 .header-3__item {
+    gap: 0;
 }
-.header-3__activities .activity-pill span {
+.header-4 .header-3__item span {
     display: none;
 }
-@media (max-width: 991px) {
-    .header-3__activities {
-        gap: 8px 10px;
+.header-4 .header-3__item button {
+    padding: 7px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.10);
+    letter-spacing: 0.01em;
+}
+.header-4 .header-3__item button:hover {
+    color: var(--primary4);
+    background: var(--white);
+    border-color: var(--white);
+}
+.header-4 .activity-social .header__top-right {
+    justify-content: center;
+}
+
+/* Simplified Porto Expats desktop header. */
+.porto-expats-logo {
+    color: var(--secondary);
+    font-family: "Poppins", sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: -1.2px;
+    line-height: 1;
+}
+.header-4 .header__main {
+    justify-content: center;
+}
+@media (min-width: 992px) {
+    .header-4__main {
+        justify-content: center;
+        position: relative;
     }
-    .header-3__activities .activity-pill button {
-        padding: 7px 11px;
-        font-size: 0.85rem;
+    .header-4__main .header__menu__wrapper {
+        justify-content: center;
+    }
+    .header-4__main > .header__right {
+        align-items: center;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 }
-</style></head>
+@media (min-width: 1200px) {
+    .header-4 .header__main {
+        display: none;
+    }
+}		</style>
+		<style id="kirki-inline-styles">.progress-wrap::after{background:#DC2626;color:#ffffff;}.sk-three-bounce{background:rgba(0, 0, 0);}.sk-three-bounce .sk-child{background:rgba(255, 255, 255);}.breadcrumb-section__area .breadcrumb-section__content .breadcrumb-section__title{color:#0f0f0f;}.breadcrumb-section__area.grey-bg{background:#ffffff;background-color:#ffffff;}@media (max-width: 767px){.breadcrumb-section__content{padding-top:37px;padding-bottom:37px;}}@media (min-width: 768px) and (max-width: 1023px){.breadcrumb-section__content{padding-top:37px;padding-bottom:37px;}}@media (min-width: 1024px){.breadcrumb-section__content{padding-top:52px;padding-bottom:52px;}}</style></head>
 
 <body class="wp-singular page-template page-template-elementor_header_footer page page-id-4705 wp-custom-logo wp-embed-responsive wp-theme-ebuzz no-sidebar elementor-default elementor-template-full-width elementor-kit-6 elementor-page elementor-page-4705">
         
@@ -202,108 +256,42 @@ background: #F3F4F6 !important;
                             <div class="header__top d-none d-xl-block">
                     <div class="container custom-container">
                         <div class="row align-items-center">
-                            <div class="col-lg-7">
+                            <div class="col-lg-12 activity-nav">
                                 <div class="header-3__top-left">
-                                    <div class="header-3__cat">
-                                                                                                                                    <div class="header-3__cat header-3__activities">
-                                                                                                                                                                                <div class="header-3__item activity-pill">
-                                                    <button type="button">
-                                                        Art                                                    </button>
-                                                </div>
-                                                                                                                                                                                <div class="header-3__item activity-pill">
-                                                    <button type="button">
-                                                        Bars                                                    </button>
-                                                </div>
-                                                                                                                                                                                <div class="header-3__item activity-pill">
-                                                    <button type="button">
-                                                        Beaches                                                    </button>
-                                                </div>
-                                                                                                                                                                                <div class="header-3__item activity-pill">
-                                                    <button type="button">
-                                                        Cafes                                                    </button>
-                                                </div>
-                                                                                                                                                                                <div class="header-3__item activity-pill">
-                                                    <button type="button">
-                                                        Drinks                                                    </button>
-                                                </div>
-                                                                                                                                                                                <div class="header-3__item activity-pill">
-                                                    <button type="button">
-                                                        Education                                                    </button>
-                                                </div>
-                                                                                                                                                                                <div class="header-3__item activity-pill">
-                                                    <button type="button">
-                                                        Finance                                                    </button>
-                                                </div>
-                                                                                                                                                                                <div class="header-3__item activity-pill">
-                                                    <button type="button">
-                                                        Food                                                    </button>
-                                                </div>
-                                                                                                                                                                                <div class="header-3__item activity-pill">
-                                                    <button type="button">
-                                                        Kids                                                    </button>
-                                                </div>
-                                                                                                                                                                                <div class="header-3__item activity-pill">
-                                                    <button type="button">
-                                                        Language                                                    </button>
-                                                </div>
-                                                                                                                                                                                <div class="header-3__item activity-pill">
-                                                    <button type="button">
-                                                        Music                                                    </button>
-                                                </div>
-                                                                                                                                                                                <div class="header-3__item activity-pill">
-                                                    <button type="button">
-                                                        Pastries                                                    </button>
-                                                </div>
-                                                                                                                                                                                <div class="header-3__item activity-pill">
-                                                    <button type="button">
-                                                        Pets                                                    </button>
-                                                </div>
-                                                                                                                                                                                <div class="header-3__item activity-pill">
-                                                    <button type="button">
-                                                        Places                                                    </button>
-                                                </div>
-                                                                                                                                                                                <div class="header-3__item activity-pill">
-                                                    <button type="button">
-                                                        Restaurants                                                    </button>
-                                                </div>
-                                                                                                                                                                                <div class="header-3__item activity-pill">
-                                                    <button type="button">
-                                                        Rooftop                                                    </button>
-                                                </div>
-                                                                                                                                                                                <div class="header-3__item activity-pill">
-                                                    <button type="button">
-                                                        Services                                                    </button>
-                                                </div>
-                                                                                                                                                                                <div class="header-3__item activity-pill">
-                                                    <button type="button">
-                                                        Sport                                                    </button>
-                                                </div>
-                                                                                                                                                                                <div class="header-3__item activity-pill">
-                                                    <button type="button">
-                                                        Traditions                                                    </button>
-                                                </div>
-                                                                                                                                                                                <div class="header-3__item activity-pill">
-                                                    <button type="button">
-                                                        Trips                                                    </button>
-                                                </div>
-                                                                                                                                                                                <div class="header-3__item activity-pill">
-                                                    <button type="button">
-                                                        Vegetarian                                                    </button>
-                                                </div>
-                                                                                                                                                                                <div class="header-3__item activity-pill">
-                                                    <button type="button">
-                                                        Wine                                                    </button>
-                                                </div>
-                                                                                                                                                                                <div class="header-3__item activity-pill">
-                                                    <button type="button">
-                                                        Work                                                    </button>
-                                                </div>
-                                                                                                                        </div>
-                                                                                                                        </div>
+                                    <div class="activity-header-layout">
+                                    <div class="header-3__cat activity-group--left">
+                                        <div class="header-3__item"><span></span><button><a href="#art">Art</a></button></div>
+                                        <div class="header-3__item"><span></span><button><a href="#bars">Bars</a></button></div>
+                                        <div class="header-3__item"><span></span><button><a href="#beaches">Beaches</a></button></div>
+                                        <div class="header-3__item"><span></span><button><a href="#cafes">Cafes</a></button></div>
+                                        <div class="header-3__item"><span></span><button><a href="#drinks">Drinks</a></button></div>
+                                        <div class="header-3__item"><span></span><button><a href="#education">Education</a></button></div>
+                                        <div class="header-3__item"><span></span><button><a href="#finance">Finance</a></button></div>
+                                        <div class="header-3__item"><span></span><button><a href="#food">Food</a></button></div>
+                                        <div class="header-3__item"><span></span><button><a href="#kids">Kids</a></button></div>
+                                        <div class="header-3__item"><span></span><button><a href="#language">Language</a></button></div>
+                                        <div class="header-3__item"><span></span><button><a href="#music">Music</a></button></div>
+                                    </div>
+                                    <a class="activity-header-logo" href="../index.html">Porto Expats</a>
+                                    <div class="header-3__cat activity-group--right">
+                                        <div class="header-3__item"><span></span><button><a href="#pastries">Pastries</a></button></div>
+                                        <div class="header-3__item"><span></span><button><a href="#pets">Pets</a></button></div>
+                                        <div class="header-3__item"><span></span><button><a href="#places">Places</a></button></div>
+                                        <div class="header-3__item"><span></span><button><a href="#restaurants">Restaurants</a></button></div>
+                                        <div class="header-3__item"><span></span><button><a href="#rooftop">Rooftop</a></button></div>
+                                        <div class="header-3__item"><span></span><button><a href="#services">Services</a></button></div>
+                                        <div class="header-3__item"><span></span><button><a href="#sport">Sport</a></button></div>
+                                        <div class="header-3__item"><span></span><button><a href="#traditions">Traditions</a></button></div>
+                                        <div class="header-3__item"><span></span><button><a href="#trips">Trips</a></button></div>
+                                        <div class="header-3__item"><span></span><button><a href="#vegetarian">Vegetarian</a></button></div>
+                                        <div class="header-3__item"><span></span><button><a href="#wine">Wine</a></button></div>
+                                        <div class="header-3__item"><span></span><button><a href="#work">Work</a></button></div>
+                                    </div>
+                                    </div>
                                 </div>
                             </div>
 
-                                                            <div class="col-lg-5">
+                                                            <div class="col-lg-12 activity-social">
                                     <div class="header__top-right">
                                         <div class="header__social">
                                             <span>Follow Us:</span>
@@ -347,28 +335,15 @@ background: #F3F4F6 !important;
                     <div class="header__main">
 
                         <div class="header-6__weather d-none d-md-block py-3">
-                    <p><b>27°C </b> Purbapāra, Bangladesh</p>
-                </div>
+                    <!-- <p><b>27°C </b> Purbapāra, Bangladesh</p> -->
+                        </div>
                         <div class="header__logo">
                             <a href="../index.html">
-                                <img src="../wp-content/uploads/2026/01/dark-logo-4.png" alt="">
+                                <span class="porto-expats-logo">Porto Expats</span>
                             </a>
                         </div>
 
                         <div class="header__right d-flex align-items-center">
-
-                                                            <div class="header__btn d-none d-sm-block">
-                                    <a href="../contact/index.html" target="_self" rel="nofollow" class="rr-btn rr-btn-2 ">
-                                        <span class="btn-wrap">
-                                            <span class="text-one"><i class="fa-regular fa-envelope"></i>Subscribe</span>
-                                            <span class="text-two"><i class="fa-regular fa-envelope"></i>Subscribe</span>
-                                        </span>
-                                    </a>
-                                </div>
-                            
-                            <div class="header__search d-none d-xl-flex align-items-center">
-                                <button class="search-open-btn"><i class="fa-regular fa-magnifying-glass"></i></button>
-                            </div>
                             <div class="header__menu-toggle d-lg-none">
                                 <button class="menu-toggle sidebar__toggle">
                                     <span></span>
@@ -384,14 +359,6 @@ background: #F3F4F6 !important;
                         <div class="header-4__main">
 
                             <div class="header__menu__wrapper d-none d-lg-flex align-items-center">
-                                <div class="header__menu-toggle d-none d-lg-flex">
-                                    <button class="menu-toggle sidebar__toggle">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </button>
-                                </div>
-
                                 <div class="main-menu">
                                     <nav id="mobile-menu">
                                         <ul id="menu-1-ec4d2bb" class="ebuzz-nav-menu sub-menu"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-5055" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children dropdown has-dropdown active menu-item-5055 nav-item"><a title="Home" href="../index.html" class="nav-links">Home</a>
@@ -431,12 +398,7 @@ background: #F3F4F6 !important;
                             </div>
 
                             <div class="header__right d-flex">
-                                                                    <div class="header__discount d-none d-sm-block">
-                                        <a href="../contact/index.html" target="_self" rel="nofollow" class="">
-                                            Get 30% Discount Now<span>Sale</span>
-                                        </a>
-                                    </div>
-                                                                <div class="header__menu-toggle d-lg-none">
+                                <div class="header__menu-toggle d-lg-none">
                                     <button class="menu-toggle sidebar__toggle">
                                         <span></span>
                                         <span></span>
