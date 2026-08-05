@@ -280,6 +280,117 @@ background: #F3F4F6 !important;
 .elementor-element-f45d2f5 {
     display: none !important;
 }
+/* Insta World gallery. */
+.porto-insta-world .latest-updates-3__content {
+    display: none;
+}
+.porto-insta-profile {
+    margin: 18px auto 34px;
+    max-width: 760px;
+    text-align: center;
+}
+.porto-insta-profile__name {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+.porto-insta-profile__handle {
+    color: var(--primary4);
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 2px;
+}
+.porto-insta-profile__bio {
+    color: var(--body_text);
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 12px 0 0;
+}
+.porto-insta-world .latest-updates-3__thumb {
+    border-radius: 12px;
+    overflow: hidden;
+}
+.porto-insta-world .row {
+    justify-content: center;
+}
+.porto-insta-world .row > [class*="col-"] {
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.porto-insta-world .latest-updates-3__thumb img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    transition: transform 300ms ease;
+    width: 100%;
+}
+.porto-insta-world .latest-updates-3__item:hover .latest-updates-3__thumb img {
+    transform: scale(1.06);
+}
+@media (max-width: 991px) {
+    .porto-insta-world .row > [class*="col-"] { flex-basis: 33.333%; max-width: 33.333%; }
+}
+@media (max-width: 575px) {
+    .porto-insta-world .row > [class*="col-"] { flex-basis: 50%; max-width: 50%; }
+}
+.porto-insta-lightbox {
+    align-items: center;
+    background: rgba(7, 13, 23, 0.86);
+    display: none;
+    inset: 0;
+    justify-content: center;
+    padding: 32px 72px;
+    position: fixed;
+    z-index: 9999;
+}
+.porto-insta-lightbox.is-open {
+    display: flex;
+}
+.porto-insta-lightbox img {
+    border-radius: 12px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.36);
+    max-height: 86vh;
+    max-width: min(86vw, 900px);
+    object-fit: contain;
+}
+.porto-insta-lightbox button {
+    align-items: center;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    color: var(--white);
+    cursor: pointer;
+    display: flex;
+    font-size: 28px;
+    height: 46px;
+    justify-content: center;
+    position: absolute;
+    width: 46px;
+}
+.porto-insta-lightbox button:hover {
+    background: var(--primary4);
+    border-color: var(--primary4);
+}
+.porto-insta-lightbox__close { right: 26px; top: 26px; }
+.porto-insta-lightbox__prev { left: 18px; top: 50%; transform: translateY(-50%); }
+.porto-insta-lightbox__next { right: 18px; top: 50%; transform: translateY(-50%); }
+@media (max-width: 575px) {
+    .porto-insta-lightbox { padding: 24px 54px; }
+    .porto-insta-lightbox button { height: 38px; width: 38px; }
+}
+/* Keep the latest-news action below its image grid. */
+.latest-updates-3__area .col-12:has(.latest-updates-4__btn) {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+}
+.latest-updates-4__btn {
+    display: block;
+    margin: 34px auto 0 !important;
+}
 /* Popular Posts activity filters. */
 .porto-popular-posts .latest-piblished__play {
     display: none;
@@ -385,6 +496,11 @@ background: #F3F4F6 !important;
 }
 .porto-card-carousel .trending-posts__admin {
     display: none;
+}
+/* Simplified primary navigation. */
+#menu-item-7605 > .tp-submenu,
+#menu-item-7171 {
+    display: none !important;
 }
 /* Keep the long Home category menu within the viewport. */
 #menu-item-5055 > .tp-submenu {
@@ -862,7 +978,7 @@ background: #F3F4F6 !important;
 </ul>
 </li>
 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2251" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2251 nav-item"><a title="About" href="../about/index.html" class="nav-links">About</a></li>
-<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-7605" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown has-dropdown menu-item-7605 nav-item"><a title="News" href="../news/index.html" class="nav-links">News</a>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-7605" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7605 nav-item"><a title="Partnerships" href="../news/index.html" class="nav-links">Partnerships</a>
 <ul class="tp-submenu sub-menu" role="menu">
 	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-7606" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7606 nav-item"><a title="News" href="../news/index.html" class="dropdown-items">News</a></li>
 	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-7604" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7604 nav-item"><a title="News 2" href="../news-2/index.html" class="dropdown-items">News 2</a></li>
@@ -2780,7 +2896,7 @@ By pressing the subscribe button you agree to our
 					
         
             <!-- latest-updates -->
-            <section class="latest-updates-3__area grey-bg section-space-bottom">
+            <section class="latest-updates-3__area grey-bg section-space-bottom porto-insta-world">
                 <div class="container custom-container">
 
                     <div class="latest-updates-4__top heading-display__wrap">
@@ -2788,9 +2904,14 @@ By pressing the subscribe button you agree to our
                             <div class="section__border wow custom-anim-left" data-wow-duration="1s" data-wow-delay="0.1s"></div>
 
                                                             <h3 class="section__title wow custom-anim-left">
-                                    Editor’s Pick                                </h3>
+                                    Insta World                                </h3>
                             
                             <div class="section__border wow custom-anim-left" data-wow-duration="1s" data-wow-delay="0.1s"></div>
+                        </div>
+                        <div class="porto-insta-profile">
+                            <span class="porto-insta-profile__name">PORTO EXPATS</span>
+                            <span class="porto-insta-profile__handle">@portoexpats</span>
+                            <p class="porto-insta-profile__bio">ᴛɪᴘs | ɴᴏᴛ ᴏɴʟʏ | ᴀʙᴏᴜᴛ ᴘᴏʀᴛᴏ | • ᴅᴀɪʟʏ ᴘᴏʀᴛᴜɢᴜᴇꜱᴇ ᴡᴏʀᴅ | • ᴡᴇᴇᴋʟʏ ɴᴇᴡꜱʟᴇᴛᴛᴇʀꜱ |</p>
                         </div>
                     </div>
 
@@ -2804,7 +2925,7 @@ By pressing the subscribe button you agree to our
 
                                         <div class="latest-updates-3__thumb">
                                             <a href="../why-slowing-down-opens-doors-to-more-creativity-2/index.html">
-                                                <img decoding="async" src="../wp-content/uploads/2026/03/imgi_46_blog-107.jpg" alt="Why Slowing Down Opens Doors to More Creativity">
+                                                <img decoding="async" src="../wp-content/uploads/2026/04/766074398_18010394777946858_4376224610544768399_n.jpg" alt="Porto Expats">
                                             </a>
                                         </div>
 
@@ -2854,7 +2975,7 @@ By pressing the subscribe button you agree to our
 
                                         <div class="latest-updates-3__thumb">
                                             <a href="../how-to-simplify-your-daily-routine-without-losing-balance-6/index.html">
-                                                <img decoding="async" src="../wp-content/uploads/2026/03/imgi_47_blog-108.jpg" alt="How to Simplify Your Daily Routine Without Losing Balance">
+                                                <img decoding="async" src="../wp-content/uploads/2026/04/766074879_18010394804946858_1601347269483855090_n.jpg" alt="Porto Expats">
                                             </a>
                                         </div>
 
@@ -2904,7 +3025,7 @@ By pressing the subscribe button you agree to our
 
                                         <div class="latest-updates-3__thumb">
                                             <a href="../how-to-create-harmony-in-your-home-through-minimal-decor/index.html">
-                                                <img decoding="async" src="../wp-content/uploads/2026/03/imgi_48_blog-109.jpg" alt="How to Create Harmony in Your Home Through Minimal Decor">
+                                                <img decoding="async" src="../wp-content/uploads/2026/04/766075873_18010394801946858_6027621112559507745_n.jpg" alt="Porto Expats">
                                             </a>
                                         </div>
 
@@ -2954,7 +3075,7 @@ By pressing the subscribe button you agree to our
 
                                         <div class="latest-updates-3__thumb">
                                             <a href="../the-freedom-that-comes-from-prioritizing-time-over-things/index.html">
-                                                <img decoding="async" src="../wp-content/uploads/2026/03/imgi_49_blog-110.jpg" alt="The Freedom That Comes from Prioritizing Time Over Things">
+                                                <img decoding="async" src="../wp-content/uploads/2026/04/766106466_18010394786946858_8255328861317603028_n.jpg" alt="Porto Expats">
                                             </a>
                                         </div>
 
@@ -3913,6 +4034,48 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
                 filterButton.classList.add('active');
             });
+        });
+    }
+
+    var instaGallery = document.querySelector('.porto-insta-world');
+    if (instaGallery) {
+        var instaLinks = Array.prototype.slice.call(instaGallery.querySelectorAll('.latest-updates-3__thumb a'));
+        var lightbox = document.createElement('div');
+        lightbox.className = 'porto-insta-lightbox';
+        lightbox.innerHTML = '<button class="porto-insta-lightbox__close" type="button" aria-label="Close">×</button><button class="porto-insta-lightbox__prev" type="button" aria-label="Previous image">‹</button><img alt="Porto Expats post"><button class="porto-insta-lightbox__next" type="button" aria-label="Next image">›</button>';
+        document.body.appendChild(lightbox);
+        var image = lightbox.querySelector('img');
+        var currentImage = 0;
+        function showInstaImage(index) {
+            currentImage = (index + instaLinks.length) % instaLinks.length;
+            var sourceImage = instaLinks[currentImage].querySelector('img');
+            image.src = sourceImage.src;
+            image.alt = sourceImage.alt;
+            lightbox.classList.add('is-open');
+        }
+        instaLinks.forEach(function (link, index) {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                showInstaImage(index);
+            });
+        });
+        lightbox.querySelector('.porto-insta-lightbox__close').addEventListener('click', function () {
+            lightbox.classList.remove('is-open');
+        });
+        lightbox.querySelector('.porto-insta-lightbox__prev').addEventListener('click', function () {
+            showInstaImage(currentImage - 1);
+        });
+        lightbox.querySelector('.porto-insta-lightbox__next').addEventListener('click', function () {
+            showInstaImage(currentImage + 1);
+        });
+        lightbox.addEventListener('click', function (event) {
+            if (event.target === lightbox) lightbox.classList.remove('is-open');
+        });
+        document.addEventListener('keydown', function (event) {
+            if (!lightbox.classList.contains('is-open')) return;
+            if (event.key === 'Escape') lightbox.classList.remove('is-open');
+            if (event.key === 'ArrowLeft') showInstaImage(currentImage - 1);
+            if (event.key === 'ArrowRight') showInstaImage(currentImage + 1);
         });
     }
 
