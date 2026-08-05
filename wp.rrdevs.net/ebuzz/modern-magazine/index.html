@@ -272,6 +272,66 @@ background: #F3F4F6 !important;
     margin-top: -80px;
     padding-top: 0 !important;
 }
+/* Featured Updates has been removed from this page. */
+.elementor-element-b4b4df1 {
+    display: none !important;
+}
+/* Three-card Latest Updates carousel. */
+.porto-card-carousel .elementor-element-3ab29e4 {
+    overflow: hidden;
+}
+.porto-card-carousel .elementor-element-8b67213 {
+    display: flex !important;
+    gap: 25px;
+    transition: transform 450ms cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+}
+.porto-card-carousel .elementor-element-8b67213 > .elementor-element {
+    flex: 0 0 calc((100% - 50px) / 3);
+    min-width: 0;
+}
+.porto-card-carousel .trending-posts__admin {
+    display: none;
+}
+.porto-card-carousel .elementor-element-47c54e5 {
+    position: relative;
+}
+.porto-carousel-controls {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.porto-carousel-controls button {
+    align-items: center;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    color: var(--secondary);
+    cursor: pointer;
+    display: flex;
+    font-size: 18px;
+    height: 34px;
+    justify-content: center;
+    line-height: 1;
+    transition: background 180ms ease, color 180ms ease;
+    width: 34px;
+}
+.porto-carousel-controls button:hover {
+    background: var(--primary4);
+    border-color: var(--primary4);
+    color: var(--white);
+}
+@media (max-width: 767px) {
+    .porto-card-carousel .elementor-element-8b67213 > .elementor-element {
+        flex-basis: 100%;
+    }
+    .porto-carousel-controls {
+        right: 8px;
+    }
+}
 .porto-latest-updates .featured-stories__date,
 .porto-latest-updates .latest-updates__date,
 .porto-latest-updates .trending-posts__meta,
@@ -1390,7 +1450,7 @@ background: #F3F4F6 !important;
 					</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-2ee9bb9 e-con-full e-flex e-con e-parent" data-id="2ee9bb9" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-2ee9bb9 porto-card-carousel e-con-full e-flex e-con e-parent" data-id="2ee9bb9" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 		<div class="elementor-element elementor-element-09cc970 e-flex e-con-boxed e-con e-child" data-id="09cc970" data-element_type="container" data-e-type="container">
 					<div class="e-con-inner">
 		<div class="elementor-element elementor-element-6f7e2f4 e-con-full e-flex e-con e-child" data-id="6f7e2f4" data-element_type="container" data-e-type="container">
@@ -1409,14 +1469,14 @@ background: #F3F4F6 !important;
 
 						</div>
 				</div>
-				<div class="elementor-element elementor-element-1158fc0 elementor-widget elementor-widget-advance_title" data-id="1158fc0" data-element_type="widget" data-e-type="widget" data-widget_type="advance_title.default">
+		<div class="elementor-element elementor-element-1158fc0 elementor-widget elementor-widget-advance_title" data-id="1158fc0" data-element_type="widget" data-e-type="widget" data-widget_type="advance_title.default">
 				<div class="elementor-widget-container">
 					
 			<div class="popular-posts__top heading-display__wrap">
 				<div class="section-heading__wrap">
 
-											<h3 class="section__title wow custom-anim-left" data-wow-duration="1s" data-wow-delay="0.1s">
-							Latest Updates						</h3>
+							<h3 class="section__title wow custom-anim-left" data-wow-duration="1s" data-wow-delay="0.1s">
+							What’s Happening in Porto						</h3>
 					
 					
 				</div>
@@ -3645,6 +3705,40 @@ document.addEventListener('DOMContentLoaded', function () {
             var isExpanded = latestUpdates.classList.toggle('porto-more-visible');
             this.textContent = isExpanded ? 'Show Less' : 'Read More';
         });
+    }
+
+    var carousel = document.querySelector('.porto-card-carousel');
+    if (carousel) {
+        var track = carousel.querySelector('.elementor-element-8b67213');
+        var carouselHeader = carousel.querySelector('.elementor-element-47c54e5');
+        var originalSlides = Array.prototype.slice.call(track.children);
+        originalSlides.forEach(function (slide) {
+            track.appendChild(slide.cloneNode(true));
+        });
+
+        var controls = document.createElement('div');
+        controls.className = 'porto-carousel-controls';
+        controls.innerHTML = '<button type="button" aria-label="Previous posts">‹</button><button type="button" aria-label="Next posts">›</button>';
+        carouselHeader.appendChild(controls);
+
+        var page = 0;
+        function renderCarousel() {
+            var itemsPerView = window.innerWidth <= 767 ? 1 : 3;
+            var maxPage = Math.ceil(track.children.length / itemsPerView) - 1;
+            page = Math.max(0, Math.min(page, maxPage));
+            var distance = track.parentElement.clientWidth + 25;
+            track.style.transform = 'translateX(-' + (page * distance) + 'px)';
+        }
+        controls.children[0].addEventListener('click', function () {
+            page -= 1;
+            renderCarousel();
+        });
+        controls.children[1].addEventListener('click', function () {
+            page += 1;
+            renderCarousel();
+        });
+        window.addEventListener('resize', renderCarousel);
+        renderCarousel();
     }
 
     var navigation = document.querySelector('.header__wrap.header-sticky');
