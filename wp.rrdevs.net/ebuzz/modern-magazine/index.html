@@ -511,6 +511,27 @@ background: #F3F4F6 !important;
     padding: 8px;
     width: 510px;
 }
+#porto-categories-menu > .tp-submenu {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-height: calc(100vh - 90px);
+    overflow-y: auto;
+    padding: 8px;
+    width: 510px;
+}
+#porto-categories-menu > .tp-submenu > li {
+    display: block;
+    margin: 0;
+    width: auto;
+}
+#porto-categories-menu > .tp-submenu > li > a {
+    font-size: 13px;
+    padding: 9px 12px;
+    white-space: nowrap;
+}
+#menu-item-5055 > .tp-submenu {
+    display: none !important;
+}
 #menu-item-5055 > .tp-submenu > li {
     display: block;
     margin: 0;
@@ -4086,6 +4107,23 @@ document.addEventListener('DOMContentLoaded', function () {
             section.style.display = 'none';
         }
     });
+
+    var homeMenu = document.querySelector('#menu-item-5055');
+    if (homeMenu) {
+        var categoryItems = Array.prototype.slice.call(homeMenu.querySelectorAll('a[href^="#"]')).map(function (link) {
+            return link.closest('li');
+        });
+        if (categoryItems.length) {
+            var categoriesMenu = document.createElement('li');
+            categoriesMenu.id = 'porto-categories-menu';
+            categoriesMenu.className = 'menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown has-dropdown nav-item';
+            categoriesMenu.innerHTML = '<a href="#activities" class="nav-links">Categories</a><ul class="tp-submenu sub-menu" role="menu"></ul>';
+            var categoryList = categoriesMenu.querySelector('ul');
+            categoryItems.forEach(function (item) { categoryList.appendChild(item); });
+            homeMenu.parentNode.insertBefore(categoriesMenu, homeMenu.nextSibling);
+        }
+        homeMenu.classList.remove('menu-item-has-children', 'dropdown', 'has-dropdown');
+    }
 
     var navigation = document.querySelector('.header__wrap.header-sticky');
     if (!navigation) return;
