@@ -267,6 +267,195 @@ background: #F3F4F6 !important;
     }
 }
 
+/* Latest Updates: compact text-first blog cards. */
+.porto-latest-updates {
+    margin-top: -80px;
+    padding-top: 0 !important;
+}
+.porto-latest-updates .featured-stories__date,
+.porto-latest-updates .latest-updates__date,
+.porto-latest-updates .trending-posts__meta,
+.porto-latest-updates .featured-posts-2__dec,
+.porto-latest-updates .trending-posts__admin span {
+    display: none;
+}
+.porto-latest-updates .latest-updates-2__item,
+.porto-latest-updates .latest-updates__wrap,
+.porto-latest-updates .featured-posts-2__wrap {
+    background: var(--white);
+    border: 1px solid #e8ebef;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    padding: 24px;
+    transition: box-shadow 200ms ease, transform 200ms ease;
+}
+.porto-latest-updates .latest-updates-2__item:hover,
+.porto-latest-updates .latest-updates__wrap:hover,
+.porto-latest-updates .featured-posts-2__wrap:hover {
+    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.12);
+    transform: translateY(-3px);
+}
+.porto-latest-updates .featured-stories__content,
+.porto-latest-updates .latest-updates__content,
+.porto-latest-updates .featured-posts-2__text {
+    padding: 0;
+}
+.porto-latest-updates .featured-stories__thumb,
+.porto-latest-updates .latest-updates__thumb,
+.porto-latest-updates .featured-posts-2__image {
+    border-radius: 14px 14px 0 0;
+    display: block;
+    margin: -24px -24px 18px;
+    overflow: hidden;
+}
+.porto-latest-updates .featured-stories__thumb img,
+.porto-latest-updates .latest-updates__thumb img,
+.porto-latest-updates .featured-posts-2__image img {
+    height: 190px;
+    object-fit: cover;
+    transition: transform 300ms ease;
+    width: 100%;
+}
+.porto-latest-updates .latest-updates-2__item:hover img,
+.porto-latest-updates .latest-updates__wrap:hover img,
+.porto-latest-updates .featured-posts-2__wrap:hover img {
+    transform: scale(1.04);
+}
+.porto-latest-updates .featured-stories__meta,
+.porto-latest-updates .latest-updates__meta,
+.porto-latest-updates .trending-posts__admin {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.porto-latest-updates .featured-stories__title,
+.porto-latest-updates .latest-updates__title,
+.porto-latest-updates .trending-posts__title {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    line-height: 1.35;
+    margin: 0;
+}
+.porto-latest-updates .featured-stories__title a,
+.porto-latest-updates .latest-updates__title a,
+.porto-latest-updates .trending-posts__title a {
+    color: var(--secondary);
+}
+.porto-latest-updates .featured-stories__title a:hover,
+.porto-latest-updates .latest-updates__title a:hover,
+.porto-latest-updates .trending-posts__title a:hover {
+    color: var(--primary4);
+}
+/* Use the left-hand travel-post layout consistently for every Latest Updates blog. */
+.porto-latest-updates .latest-updates-2__item,
+.porto-latest-updates .latest-updates__wrap,
+.porto-latest-updates .featured-posts-2__wrap {
+    align-items: center;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--border);
+    border-radius: 0;
+    box-shadow: none;
+    display: flex;
+    gap: 25px;
+    margin-bottom: 27px;
+    padding: 0 0 27px;
+}
+.porto-latest-updates .latest-updates-2__item:hover,
+.porto-latest-updates .latest-updates__wrap:hover,
+.porto-latest-updates .featured-posts-2__wrap:hover {
+    box-shadow: none;
+    transform: none;
+}
+.porto-latest-updates .featured-stories__thumb,
+.porto-latest-updates .latest-updates__thumb,
+.porto-latest-updates .featured-posts-2__image {
+    flex: 0 0 180px;
+    height: 130px !important;
+    margin: 0;
+    width: 180px;
+}
+.porto-latest-updates .featured-stories__thumb a,
+.porto-latest-updates .latest-updates__thumb a,
+.porto-latest-updates .featured-posts-2__image a,
+.porto-latest-updates .featured-stories__thumb img,
+.porto-latest-updates .latest-updates__thumb img,
+.porto-latest-updates .featured-posts-2__image img {
+    height: 100%;
+}
+.porto-latest-updates .featured-stories__content,
+.porto-latest-updates .latest-updates__content,
+.porto-latest-updates .featured-posts-2__text {
+    flex: 1;
+    text-align: left;
+}
+/* The right-hand cards need a single full-width column, not two narrow columns. */
+.porto-latest-updates .elementor-element-b03a563 {
+    --e-con-grid-template-columns: minmax(0, 1fr) !important;
+}
+.porto-latest-updates .porto-matching-list-item {
+    margin-bottom: 36px !important;
+    padding-bottom: 36px !important;
+}
+/* The source repeats this short-form post; show the first instance only. */
+.porto-latest-updates .elementor-element-57d81d3 .custom_post02 + .custom_post02 {
+    display: none;
+}
+.porto-latest-updates.porto-more-visible .elementor-element-57d81d3 .custom_post02 + .custom_post02 {
+    display: block;
+}
+.porto-latest-load-more {
+    margin-top: -70px;
+    text-align: center;
+}
+.porto-latest-load-more button {
+    background: var(--primary4);
+    border: 0;
+    border-radius: 999px;
+    color: var(--white);
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    overflow: hidden;
+    padding: 10px 22px;
+    position: relative;
+}
+.porto-latest-load-more button::after {
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+    content: "";
+    height: 100%;
+    left: -120%;
+    position: absolute;
+    top: 0;
+    transform: skewX(-20deg);
+    transition: left 450ms ease;
+    width: 55%;
+}
+.porto-latest-load-more button:hover {
+    background: var(--secondary);
+    color: var(--white);
+}
+.porto-latest-load-more button:hover::after {
+    left: 150%;
+}
+@media (max-width: 575px) {
+    .porto-latest-updates .latest-updates-2__item,
+    .porto-latest-updates .latest-updates__wrap,
+    .porto-latest-updates .featured-posts-2__wrap {
+        align-items: flex-start;
+        gap: 16px;
+    }
+    .porto-latest-updates .featured-stories__thumb,
+    .porto-latest-updates .latest-updates__thumb,
+    .porto-latest-updates .featured-posts-2__image {
+        flex-basis: 110px;
+        height: 100px !important;
+        width: 110px;
+    }
+}
+
 /* Porto feature story: content is layered directly on the skyline image. */
 .porto-hero {
     align-items: end;
@@ -668,7 +857,7 @@ background: #F3F4F6 !important;
 				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-4145bf4 e-flex e-con-boxed e-con e-parent" data-id="4145bf4" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-4145bf4 porto-latest-updates e-flex e-con-boxed e-con e-parent" data-id="4145bf4" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
 		<div class="elementor-element elementor-element-0cc74ee e-con-full e-flex e-con e-child" data-id="0cc74ee" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-12c4ba7 elementor-widget elementor-widget-advance_title" data-id="12c4ba7" data-element_type="widget" data-e-type="widget" data-widget_type="advance_title.default">
@@ -826,14 +1015,14 @@ background: #F3F4F6 !important;
         
             <!-- popular-posts -->
             
-                <div class="latest-updates__wrap mb-24 wow fadeInUp" data-wow-duration="0.7s" data-wow-delay="0.5s">
-                                            <div class="latest-updates__thumb">
+                <div class="latest-updates-2__item porto-matching-list-item mb-24 wow fadeInUp" data-wow-duration="0.7s" data-wow-delay="0.5s">
+                                            <div class="featured-stories__thumb">
                             <a href="../why-remote-work-is-no-longer-just-a-pandemic-solution/index.html">
                                 <img decoding="async" src="../wp-content/uploads/2026/02/imgi_19_blog-141.jpg" alt="Why Remote Work Is No Longer Just a Pandemic Solution">
                             </a>
                         </div>
-                                        <div class="latest-updates__content">
-                        <div class="latest-updates__meta">
+                                        <div class="featured-stories__content">
+                        <div class="featured-stories__meta">
                             
                             <span>
                                 <a href="../author/ebuzz/index.html">
@@ -842,10 +1031,10 @@ background: #F3F4F6 !important;
                             <span>
                                 6 months ago                            </span>
                         </div>
-                        <h3 class="latest-updates__title"><a href="../why-remote-work-is-no-longer-just-a-pandemic-solution/index.html">Why Remote Work Is No Longer Just a Pandemic Solution</a></h3>
+                        <h3 class="featured-stories__title"><a href="../why-remote-work-is-no-longer-just-a-pandemic-solution/index.html">Why Remote Work Is No Longer Just a Pandemic Solution</a></h3>
 
                         
-                        <div class="latest-updates__date">
+                        <div class="featured-stories__date">
                             <p>
                                 <a href="../category/artificial/index.html">Artificial</a>                            </p>
                             <span>2 min read</span>                        </div>
@@ -860,14 +1049,14 @@ background: #F3F4F6 !important;
         
             <!-- popular-posts -->
             
-                <div class="latest-updates__wrap mb-24 wow fadeInUp" data-wow-duration="0.7s" data-wow-delay="0.5s">
-                                            <div class="latest-updates__thumb">
+                <div class="latest-updates-2__item porto-matching-list-item mb-24 wow fadeInUp" data-wow-duration="0.7s" data-wow-delay="0.5s">
+                                            <div class="featured-stories__thumb">
                             <a href="../less-sugar-and-more-wholesome-foods-make-life-better/index.html">
                                 <img decoding="async" src="../wp-content/uploads/2026/02/imgi_17_blog-140.jpg" alt="Less Sugar and More Wholesome Foods Make Life Better">
                             </a>
                         </div>
-                                        <div class="latest-updates__content">
-                        <div class="latest-updates__meta">
+                                        <div class="featured-stories__content">
+                        <div class="featured-stories__meta">
                             
                             <span>
                                 <a href="../author/ebuzz/index.html">
@@ -876,10 +1065,10 @@ background: #F3F4F6 !important;
                             <span>
                                 6 months ago                            </span>
                         </div>
-                        <h3 class="latest-updates__title"><a href="../less-sugar-and-more-wholesome-foods-make-life-better/index.html">Less Sugar and More Wholesome Foods Make Life Better</a></h3>
+                        <h3 class="featured-stories__title"><a href="../less-sugar-and-more-wholesome-foods-make-life-better/index.html">Less Sugar and More Wholesome Foods Make Life Better</a></h3>
 
                         
-                        <div class="latest-updates__date">
+                        <div class="featured-stories__date">
                             <p>
                                 <a href="../category/artificial/index.html">Artificial</a>                            </p>
                             <span>2 min read</span>                        </div>
@@ -897,30 +1086,61 @@ background: #F3F4F6 !important;
         
             <!-- featured-posts -->
             <div class="custom_post02">
-                                        <div class="featured-posts-2__wrap mb-24 wow fadeInUp" data-wow-duration="0.7s" data-wow-delay="0.2s">
-                                                            <div class="featured-posts-2__image">
+                                        <div class="latest-updates-2__item porto-matching-list-item mb-24 wow fadeInUp" data-wow-duration="0.7s" data-wow-delay="0.2s">
+                                                            <div class="featured-stories__thumb">
                                     <a href="../how-short-form-content-is-redefining-storytelling-for-gen-z/index.html">
                                         <img decoding="async" src="../wp-content/uploads/2026/02/imgi_12_blog-149.jpg" alt="How Short-Form Content Is Redefining Storytelling for Gen Z">
                                     </a>
                                 </div>
-                                                        <div class="featured-posts-2__text w-100">
-                                <div class="trending-posts__info trending-posts__info-black">
-                                    <div class="trending-posts__admin">
-                                        <span><img decoding="async" src="../wp-content/uploads/2026/02/portrait-young-handsome-man-jacket-holding-laptop-scaled-e1772272692485.jpg" alt="Edward"></span>
-                                        <ul>
-                                            <li class="hover-item_2">
-                                                <a class="custom_author" href="../author/ebuzz/index.html">
-                                                    by Edward                                                </a>
-                                            </li>
-                                            <li class="custom_date">6 months ago</li>
-                                        </ul>
+                                                        <div class="featured-stories__content w-100">
+                                    <div class="trending-posts__info trending-posts__info-black">
+                                    <div class="featured-stories__meta">
+                                        <span class="custom_author">by <a href="../author/ebuzz/index.html">Edward</a></span>
+                                        <span class="cus_date">6 months ago</span>
                                     </div>
 
                                     
-                                    <h3 class="trending-posts__title">
+                                    <h3 class="featured-stories__title">
                                         <a href="../how-short-form-content-is-redefining-storytelling-for-gen-z/index.html">
-                                            How Short-Form Content Is Redefining Storytelling                                        </a>
+                                            How Short-Form Content Is Redefining Storytelling for Gen Z                                        </a>
                                     </h3>
+                                    
+
+                                                                            <p class="featured-posts-2__dec">
+                                            Quickly predominate enabled technology and web-enabled schemas. Completely evisculate diverse communities whereas pandemic data.…                                        </p>
+                                    
+                                    <div class="trending-posts__meta">
+                                        <ul>
+                                            <li class="hover-item_2">
+                                                <a class="custom_cat" href="../category/artificial-intelligence/index.html">Artificial Intelligence</a>
+                                            </li>
+                                            <li class="custom_read">2 min read</li>                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+            </div>
+             <div class="custom_post02">
+                                        <div class="latest-updates-2__item porto-matching-list-item mb-24 wow fadeInUp" data-wow-duration="0.7s" data-wow-delay="0.2s">
+                                                            <div class="featured-stories__thumb">
+                                    <a href="../how-short-form-content-is-redefining-storytelling-for-gen-z/index.html">
+                                        <img decoding="async" src="../wp-content/uploads/2026/02/imgi_12_blog-149.jpg" alt="How Short-Form Content Is Redefining Storytelling for Gen Z">
+                                    </a>
+                                </div>
+                                                        <div class="featured-stories__content w-100">
+                                    <div class="trending-posts__info trending-posts__info-black">
+                                    <div class="featured-stories__meta">
+                                        <span class="custom_author">by <a href="../author/ebuzz/index.html">Edward</a></span>
+                                        <span class="cus_date">6 months ago</span>
+                                    </div>
+
+                                    
+                                    <h3 class="featured-stories__title">
+                                        <a href="../how-short-form-content-is-redefining-storytelling-for-gen-z/index.html">
+                                            How Short-Form Content Is Redefining Storytelling for Gen Z                                        </a>
+                                    </h3>
+                                    
 
                                                                             <p class="featured-posts-2__dec">
                                             Quickly predominate enabled technology and web-enabled schemas. Completely evisculate diverse communities whereas pandemic data.…                                        </p>
@@ -938,14 +1158,52 @@ background: #F3F4F6 !important;
                 
             </div>
 
-        
+             <div class="custom_post02">
+                                        <div class="latest-updates-2__item porto-matching-list-item mb-24 wow fadeInUp" data-wow-duration="0.7s" data-wow-delay="0.2s">
+                                                            <div class="featured-stories__thumb">
+                                    <a href="../how-short-form-content-is-redefining-storytelling-for-gen-z/index.html">
+                                        <img decoding="async" src="../wp-content/uploads/2026/02/imgi_12_blog-149.jpg" alt="How Short-Form Content Is Redefining Storytelling for Gen Z">
+                                    </a>
+                                </div>
+                                                        <div class="featured-stories__content w-100">
+                                    <div class="trending-posts__info trending-posts__info-black">
+                                    <div class="featured-stories__meta">
+                                        <span class="custom_author">by <a href="../author/ebuzz/index.html">Edward</a></span>
+                                        <span class="cus_date">6 months ago</span>
+                                    </div>
+
+                                    
+                                    <h3 class="featured-stories__title">
+                                        <a href="../how-short-form-content-is-redefining-storytelling-for-gen-z/index.html">
+                                            How Short-Form Content Is Redefining Storytelling for Gen Z                                        </a>
+                                    </h3>
+                                    
+
+                                                                            <p class="featured-posts-2__dec">
+                                            Quickly predominate enabled technology and web-enabled schemas. Completely evisculate diverse communities whereas pandemic data.…                                        </p>
+                                    
+                                    <div class="trending-posts__meta">
+                                        <ul>
+                                            <li class="hover-item_2">
+                                                <a class="custom_cat" href="../category/artificial-intelligence/index.html">Artificial Intelligence</a>
+                                            </li>
+                                            <li class="custom_read">2 min read</li>                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+            </div>
 				</div>
 				</div>
 				</div>
 				</div>
 				</div>
-					</div>
 				</div>
+				</div>
+                <div class="porto-latest-load-more">
+                    <button type="button">Read More</button>
+                </div>
 		<div class="elementor-element elementor-element-b4b4df1 e-con-full e-flex e-con e-parent" data-id="b4b4df1" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 		<div class="elementor-element elementor-element-b44bbc6 e-flex e-con-boxed e-con e-child" data-id="b44bbc6" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
@@ -3379,6 +3637,16 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+    var latestUpdates = document.querySelector('.porto-latest-updates');
+    var loadMore = document.querySelector('.porto-latest-load-more');
+    if (latestUpdates && loadMore) {
+        latestUpdates.appendChild(loadMore);
+        loadMore.querySelector('button').addEventListener('click', function () {
+            var isExpanded = latestUpdates.classList.toggle('porto-more-visible');
+            this.textContent = isExpanded ? 'Show Less' : 'Read More';
+        });
+    }
+
     var navigation = document.querySelector('.header__wrap.header-sticky');
     if (!navigation) return;
 
