@@ -4079,6 +4079,14 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    document.querySelectorAll('.section__title').forEach(function (heading) {
+        if (heading.textContent.trim() !== 'Popular Posts') return;
+        var section = heading.closest('.e-con.e-parent');
+        if (section && section.textContent.includes('Latest Updates') && section.textContent.includes('Recent Posts')) {
+            section.style.display = 'none';
+        }
+    });
+
     var navigation = document.querySelector('.header__wrap.header-sticky');
     if (!navigation) return;
 
