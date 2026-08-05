@@ -226,6 +226,107 @@ background: #F3F4F6 !important;
     .header-4 .header__main {
         display: none;
     }
+    .header-4 .header__wrap.header-sticky.porto-nav-fixed {
+        animation: porto-nav-reveal 360ms cubic-bezier(0.22, 1, 0.36, 1) both;
+        left: 0;
+        position: fixed !important;
+        right: 0;
+        top: 0;
+        transform: none !important;
+        z-index: 999 !important;
+    }
+    .header-4 .header-4__wrap-bottom {
+        background: var(--white);
+        box-shadow: 0 5px 18px rgba(15, 23, 42, 0.10);
+    }
+    .header-4 .sticky-port-logo {
+        color: var(--secondary);
+        font-family: "Poppins", sans-serif;
+        font-size: 21px;
+        font-weight: 700;
+        left: 0;
+        letter-spacing: -0.6px;
+        line-height: 1;
+        position: absolute;
+        white-space: nowrap;
+    }
+}
+@keyframes porto-nav-reveal {
+    from {
+        opacity: 0;
+        top: -14px;
+    }
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .header-4 .header__wrap.header-sticky.porto-nav-fixed {
+        animation: none;
+    }
+}
+
+/* Porto feature story: content is layered directly on the skyline image. */
+.porto-hero {
+    align-items: end;
+    display: flex;
+    min-height: 620px;
+    padding: 72px 0;
+    position: relative;
+    isolation: isolate;
+}
+.porto-hero::before {
+    background: linear-gradient(90deg, rgba(4, 15, 29, 0.86) 0%, rgba(4, 15, 29, 0.58) 42%, rgba(4, 15, 29, 0.08) 76%);
+    content: "";
+    inset: 0;
+    position: absolute;
+    z-index: 0;
+}
+.porto-hero .container {
+    position: relative;
+    z-index: 1;
+}
+.porto-hero .row {
+    justify-content: flex-end;
+}
+.porto-hero .banner-section__item {
+    background: transparent;
+    border-radius: 16px;
+    margin: 0;
+    margin-left: auto;
+    max-width: 490px;
+    overflow: hidden;
+}
+.porto-hero .banner-section__content {
+    background: rgba(8, 23, 39, 0.60);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 16px;
+    padding: 34px 38px;
+}
+.porto-hero .new-post-3__dec,
+.porto-hero .new-post-3__title a {
+    color: var(--white);
+}
+.porto-hero .new-post-3__title {
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(28px, 3vw, 42px);
+    line-height: 1.16;
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.32);
+}
+.porto-hero .new-post-3__dec {
+    font-size: 16px;
+    line-height: 1.7;
+}
+@media (max-width: 767px) {
+    .porto-hero {
+        min-height: 530px;
+        padding: 40px 0;
+    }
+    .porto-hero .banner-section__content {
+        padding: 26px 24px 18px;
+    }
 }		</style>
 		<style id="kirki-inline-styles">.progress-wrap::after{background:#DC2626;color:#ffffff;}.sk-three-bounce{background:rgba(0, 0, 0);}.sk-three-bounce .sk-child{background:rgba(255, 255, 255);}.breadcrumb-section__area .breadcrumb-section__content .breadcrumb-section__title{color:#0f0f0f;}.breadcrumb-section__area.grey-bg{background:#ffffff;background-color:#ffffff;}@media (max-width: 767px){.breadcrumb-section__content{padding-top:37px;padding-bottom:37px;}}@media (min-width: 768px) and (max-width: 1023px){.breadcrumb-section__content{padding-top:37px;padding-bottom:37px;}}@media (min-width: 1024px){.breadcrumb-section__content{padding-top:52px;padding-bottom:52px;}}</style></head>
 
@@ -357,6 +458,7 @@ background: #F3F4F6 !important;
                 <div class="header-4__wrap-bottom d-none d-lg-block">
                     <div class="container custom-container">
                         <div class="header-4__main">
+                            <a class="sticky-port-logo" href="../index.html">Porto Expats</a>
 
                             <div class="header__menu__wrapper d-none d-lg-flex align-items-center">
                                 <div class="main-menu">
@@ -536,7 +638,7 @@ background: #F3F4F6 !important;
             <!-- banner-section -->
             <section class="banner-section__area">
 
-                                                                    <div class="post-bg banner-section__wrapper" data-background="https://wp.rrdevs.net/ebuzz/wp-content/uploads/2026/03/imgi_64_blog-106.jpg">
+                                                                    <div class="post-bg banner-section__wrapper porto-hero" data-background="../wp-content/uploads/2026/03/head.webp">
                                 <div class="container custom-container">
                                     <div class="row">
                                         <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-8">
@@ -544,17 +646,6 @@ background: #F3F4F6 !important;
                                             <div class="banner-section__item wow fadeInUp" data-wow-duration="0.7s" data-wow-delay="0.2s">
                                                 <div class="banner-section__content">
                                                     <div class="new-post-3__info">
-                                                        <div class="new-post-3__admin">
-                                                            <span>
-                                                                <img decoding="async" src="../wp-content/uploads/2026/02/portrait-young-handsome-man-jacket-holding-laptop-scaled-e1772272692485.jpg" alt="Edward">
-                                                            </span>
-                                                            <ul>
-                                                                <li class="hover-item_2 custom_author"><a href="../author/ebuzz/index.html">by Edward</a></li>
-                                                                <li class="custom_date">5 months ago</li>
-                                                            </ul>
-                                                        </div>
-
-                                                        
                                                         <h3 class="new-post-3__title">
                                                             <a href="../how-sustainable-tourism-is-changing-the-way-we-see-the-world-2/index.html">
                                                                 How Sustainable Tourism Is Changing the Way We See the World                                                            </a>
@@ -563,24 +654,9 @@ background: #F3F4F6 !important;
                                                                                                                     <p class="new-post-3__dec custom_description">
                                                                 Quickly predominate enabled technology and web-enabled schemas. Completely evisculate diverse communities whereas pandemic data. Quickly build covalent data after turnkey…                                                            </p>
                                                         
-                                                        <div class="new-post-3__meta">
-                                                            <ul>
-                                                                <li>
-                                                                    <a class="hover-item_3 custom_cat" href="../category/environmental/index.html">Environmental</a>                                                                </li>
-                                                                <li class="custom_read">2 min read</li>                                                            </ul>
-                                                        </div>
                                                     </div>
                                                 </div>
 
-                                                                                                    <div class="banner-section__btn">
-                                                        <a href="../how-sustainable-tourism-is-changing-the-way-we-see-the-world-2/index.html" target="_blank" rel="nofollow" class="rr-btn rr-btn-6">
-                                                            <span class="btn-wrap">
-                                                                <span class="text-one">Read More</span>
-                                                                <span class="text-two">Read More</span>
-                                                            </span>
-                                                        </a>
-                                                    </div>
-                                                
                                             </div>
                                         </div>
                                     </div>
@@ -3301,5 +3377,32 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
 </div>
 </div>
 
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var navigation = document.querySelector('.header__wrap.header-sticky');
+    if (!navigation) return;
 
+    var spacer = document.createElement('div');
+    spacer.className = 'porto-nav-spacer';
+    navigation.parentNode.insertBefore(spacer, navigation);
+    var stickyStart = 0;
+
+    function measure() {
+        navigation.classList.remove('porto-nav-fixed');
+        spacer.style.height = '0px';
+        stickyStart = navigation.getBoundingClientRect().top + window.scrollY;
+        update();
+    }
+
+    function update() {
+        var shouldStick = window.innerWidth >= 1200 && window.scrollY > stickyStart;
+        navigation.classList.toggle('porto-nav-fixed', shouldStick);
+        spacer.style.height = shouldStick ? navigation.offsetHeight + 'px' : '0px';
+    }
+
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', measure);
+    measure();
+});
+</script>
 </body></html>
