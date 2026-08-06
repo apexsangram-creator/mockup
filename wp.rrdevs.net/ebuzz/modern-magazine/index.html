@@ -1267,6 +1267,55 @@ background: #F3F4F6 !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
 }
 
+/* Footer Office Info Column Hover Micro-Animations */
+.elementor-element-42609a8 .elementor-icon {
+    transition: transform 0.25s ease !important;
+}
+.elementor-element-42609a8 .elementor-icon i {
+    display: inline-block !important;
+    transition: transform 0.25s ease !important;
+}
+
+/* 1. Phone Ringing Shake */
+.elementor-element-af5a0e6:hover .elementor-icon i,
+.elementor-element-af5a0e6:hover .elementor-icon {
+    animation: ft-phone-ring 0.35s infinite alternate ease-in-out !important;
+}
+@keyframes ft-phone-ring {
+    0% { transform: rotate(-18deg) scale(1.18); }
+    100% { transform: rotate(18deg) scale(1.18); }
+}
+
+/* 2. Email Envelope Bounce */
+.elementor-element-127dc14:hover .elementor-icon i,
+.elementor-element-127dc14:hover .elementor-icon {
+    animation: ft-envelope-bounce 0.5s infinite alternate ease-in-out !important;
+}
+@keyframes ft-envelope-bounce {
+    0% { transform: translateY(0) scale(1.05); }
+    100% { transform: translateY(-7px) scale(1.2); }
+}
+
+/* 3. Office Pin Bouncing Drop */
+.elementor-element-6649822:hover .elementor-icon i,
+.elementor-element-6649822:hover .elementor-icon {
+    animation: ft-pin-drop 0.45s infinite alternate ease-in-out !important;
+}
+@keyframes ft-pin-drop {
+    0% { transform: translateY(0) scale(1); }
+    100% { transform: translateY(-8px) scale(1.22); }
+}
+
+/* 4. Clock Tick-Tock Wiggle */
+.elementor-element-75fca39:hover .elementor-icon i,
+.elementor-element-75fca39:hover .elementor-icon {
+    animation: ft-clock-tick 0.55s infinite alternate ease-in-out !important;
+}
+@keyframes ft-clock-tick {
+    0% { transform: rotate(-25deg) scale(1.1); }
+    100% { transform: rotate(25deg) scale(1.2); }
+}
+
 /* Sleek, Elegant & Vibrant Footer Subscribe Form */
 .footer-4__widget.footer-subscribe-2 .footer-2__title {
     font-family: 'Poppins', sans-serif;
