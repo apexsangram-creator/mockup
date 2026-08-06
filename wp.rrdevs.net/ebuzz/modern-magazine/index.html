@@ -1443,6 +1443,210 @@ background: #F3F4F6 !important;
         right: 20px !important;
     }
 }
+/* Custom Partnerships Page Styles */
+.porto-filter-section {
+    padding: 35px 0 20px;
+    background: #F8FAF6;
+}
+.porto-filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+.porto-filter-btn {
+    background: #ffffff;
+    color: #334155;
+    border: 1.5px solid #E2E8F0;
+    padding: 10px 24px;
+    border-radius: 999px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+.porto-filter-btn:hover {
+    border-color: #0F2744;
+    color: #0F2744;
+}
+.porto-filter-btn.active {
+    background: #0F2744;
+    color: #ffffff;
+    border-color: #0F2744;
+    box-shadow: 0 4px 14px rgba(15, 39, 68, 0.25);
+}
+
+.porto-partners-grid {
+    padding-bottom: 70px;
+    background: #F8FAF6;
+}
+.partner-card {
+    background-color: #ffffff;
+    background-image: 
+        radial-gradient(at 90% 10%, rgba(2, 132, 199, 0.06) 0px, transparent 50%),
+        radial-gradient(at 10% 90%, rgba(231, 8, 32, 0.05) 0px, transparent 50%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='400' viewBox='0 0 500 400'%3E%3Cpath fill='none' stroke='rgba(15,23,42,0.045)' stroke-width='2.5' d='M-50,100 C120,220 280,30 550,150 M-50,180 C150,40 350,300 550,120 M-50,260 C100,360 380,120 550,280 M-50,340 C180,200 320,380 550,240'/%3E%3Cpath fill='rgba(15,23,42,0.018)' d='M0,180 C150,290 350,90 500,220 L500,400 L0,400 Z'/%3E%3C/svg%3E");
+    background-size: cover;
+    background-position: center;
+    border-radius: 22px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    padding: 26px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.partner-item[data-category*="food"] .partner-card {
+    background-color: #FFFBF5;
+    background-image: 
+        radial-gradient(at 85% 15%, rgba(245, 158, 11, 0.12) 0px, transparent 60%),
+        radial-gradient(at 15% 85%, rgba(231, 8, 32, 0.06) 0px, transparent 60%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='400' viewBox='0 0 500 400'%3E%3Cpath fill='none' stroke='rgba(194,65,12,0.06)' stroke-width='2.5' d='M-50,100 C120,220 280,30 550,150 M-50,180 C150,40 350,300 550,120 M-50,260 C100,360 380,120 550,280'/%3E%3Cpath fill='rgba(245,158,11,0.03)' d='M0,180 C150,290 350,90 500,220 L500,400 L0,400 Z'/%3E%3C/svg%3E");
+}
+.partner-item[data-category*="culture"] .partner-card {
+    background-color: #F0F9FF;
+    background-image: 
+        radial-gradient(at 85% 15%, rgba(2, 132, 199, 0.12) 0px, transparent 60%),
+        radial-gradient(at 15% 85%, rgba(99, 102, 241, 0.06) 0px, transparent 60%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='400' viewBox='0 0 500 400'%3E%3Cpath fill='none' stroke='rgba(2,132,199,0.06)' stroke-width='2.5' d='M-50,100 C120,220 280,30 550,150 M-50,180 C150,40 350,300 550,120 M-50,260 C100,360 380,120 550,280'/%3E%3Cpath fill='rgba(2,132,199,0.03)' d='M0,180 C150,290 350,90 500,220 L500,400 L0,400 Z'/%3E%3C/svg%3E");
+}
+.partner-item[data-category*="sport"] .partner-card {
+    background-color: #F5F3FF;
+    background-image: 
+        radial-gradient(at 85% 15%, rgba(139, 92, 246, 0.12) 0px, transparent 60%),
+        radial-gradient(at 15% 85%, rgba(16, 185, 129, 0.06) 0px, transparent 60%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='400' viewBox='0 0 500 400'%3E%3Cpath fill='none' stroke='rgba(139,92,246,0.06)' stroke-width='2.5' d='M-50,100 C120,220 280,30 550,150 M-50,180 C150,40 350,300 550,120 M-50,260 C100,360 380,120 550,280'/%3E%3Cpath fill='rgba(139,92,246,0.03)' d='M0,180 C150,290 350,90 500,220 L500,400 L0,400 Z'/%3E%3C/svg%3E");
+}
+.partner-item[data-category*="beauty"] .partner-card {
+    background-color: #FFF1F2;
+    background-image: 
+        radial-gradient(at 85% 15%, rgba(244, 63, 94, 0.12) 0px, transparent 60%),
+        radial-gradient(at 15% 85%, rgba(236, 72, 153, 0.06) 0px, transparent 60%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='400' viewBox='0 0 500 400'%3E%3Cpath fill='none' stroke='rgba(244,63,94,0.06)' stroke-width='2.5' d='M-50,100 C120,220 280,30 550,150 M-50,180 C150,40 350,300 550,120 M-50,260 C100,360 380,120 550,280'/%3E%3Cpath fill='rgba(244,63,94,0.03)' d='M0,180 C150,290 350,90 500,220 L500,400 L0,400 Z'/%3E%3C/svg%3E");
+}
+.partner-item[data-category*="shopping"] .partner-card {
+    background-color: #F8FAFC;
+    background-image: 
+        radial-gradient(at 85% 15%, rgba(71, 85, 105, 0.10) 0px, transparent 60%),
+        radial-gradient(at 15% 85%, rgba(15, 23, 42, 0.05) 0px, transparent 60%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='400' viewBox='0 0 500 400'%3E%3Cpath fill='none' stroke='rgba(71,85,105,0.06)' stroke-width='2.5' d='M-50,100 C120,220 280,30 550,150 M-50,180 C150,40 350,300 550,120 M-50,260 C100,360 380,120 550,280'/%3E%3Cpath fill='rgba(71,85,105,0.03)' d='M0,180 C150,290 350,90 500,220 L500,400 L0,400 Z'/%3E%3C/svg%3E");
+}
+.partner-item[data-category*="language"] .partner-card {
+    background-color: #FFFBEB;
+    background-image: 
+        radial-gradient(at 85% 15%, rgba(217, 119, 6, 0.12) 0px, transparent 60%),
+        radial-gradient(at 15% 85%, rgba(245, 158, 11, 0.06) 0px, transparent 60%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='400' viewBox='0 0 500 400'%3E%3Cpath fill='none' stroke='rgba(217,119,6,0.06)' stroke-width='2.5' d='M-50,100 C120,220 280,30 550,150 M-50,180 C150,40 350,300 550,120 M-50,260 C100,360 380,120 550,280'/%3E%3Cpath fill='rgba(217,119,6,0.03)' d='M0,180 C150,290 350,90 500,220 L500,400 L0,400 Z'/%3E%3C/svg%3E");
+}
+
+.partner-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 38px rgba(15, 23, 42, 0.1);
+    border-color: rgba(15, 23, 42, 0.18);
+}
+
+.partner-card__header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+.partner-card__logo {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    object-fit: contain;
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    padding: 6px;
+    flex-shrink: 0;
+}
+.partner-card__meta {
+    flex-grow: 1;
+}
+.partner-card__category {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: #0284C7;
+    margin-bottom: 2px;
+    display: block;
+}
+.partner-card__title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #0F172A;
+    margin: 0;
+    line-height: 1.25;
+}
+
+.partner-card__offers {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.partner-offer-box {
+    background: #FAF3E8;
+    border-radius: 14px;
+    padding: 14px 16px;
+}
+.partner-offer-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #C2410C;
+    margin-bottom: 10px;
+    display: block;
+    line-height: 1.3;
+}
+.partner-coupon-bar {
+    background: #0F2744;
+    border-radius: 10px;
+    padding: 6px 6px 6px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+.partner-coupon-code {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    word-break: break-all;
+}
+.partner-copy-btn {
+    background: #254468;
+    color: #ffffff;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 7px 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    flex-shrink: 0;
+}
+.partner-copy-btn:hover {
+    background: #3B618E;
+    color: #ffffff;
+}
+
 @media (max-width: 767px) {
     .porto-hero {
         min-height: 530px;
@@ -2906,7 +3110,7 @@ By pressing the subscribe button you agree to our
                     <div class="latest-piblished__top heading-display__wrap">
                         <div class="section-heading__wrap section-heading-2__wrap">
                             <h3 class="section__title wow custom-anim-left" data-wow-duration="1s" data-wow-delay="0.1s">
-                                Popular Posts                            </h3>
+                                Explore by Category                            </h3>
                         </div>
 
                         <div class="latest-piblished__list filter-tab wow fadeInUp" data-wow-duration="0.7s" data-wow-delay="0.2s">
@@ -3134,7 +3338,7 @@ By pressing the subscribe button you agree to our
 				<div class="section-heading__wrap">
 
 											<h3 class="section__title wow custom-anim-left" data-wow-duration="1s" data-wow-delay="0.1s">
-							Popular Posts
+							Explore by Category
 						</h3>
 					
 											<div class="section__border wow custom-anim-left" data-wow-duration="1s" data-wow-delay="0.1s"></div>
@@ -3543,178 +3747,454 @@ By pressing the subscribe button you agree to our
 				<div class="elementor-widget-container">
 					
         
-            <!-- Categories Section -->
-            <section class="porto-categories-section" id="explore-categories">
-                <div class="container custom-container">
-                    <div class="porto-cat-header">
-                        <span class="porto-cat-badge"><i class="fa-solid fa-layer-group"></i> Porto Directory</span>
-                        <h2 class="porto-cat-title">Explore by Category</h2>
-                    </div>
 
-                    <div class="porto-cat-grid">
-                        <a href="index.html#art" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #EC4899 0%, #8B5CF6 100%);">
-                                <i class="fa-solid fa-palette"></i>
-                            </div>
-                            <span class="porto-cat-name">Art</span>
-                        </a>
 
-                        <a href="index.html#bars" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);">
-                                <i class="fa-solid fa-martini-glass-citrus"></i>
-                            </div>
-                            <span class="porto-cat-name">Bars</span>
-                        </a>
-
-                        <a href="index.html#beaches" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #06B6D4 0%, #0284C7 100%);">
-                                <i class="fa-solid fa-umbrella-beach"></i>
-                            </div>
-                            <span class="porto-cat-name">Beaches</span>
-                        </a>
-
-                        <a href="index.html#cafes" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #84CC16 0%, #16A34A 100%);">
-                                <i class="fa-solid fa-mug-hot"></i>
-                            </div>
-                            <span class="porto-cat-name">Cafes</span>
-                        </a>
-
-                        <a href="index.html#drinks" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #EF4444 0%, #F97316 100%);">
-                                <i class="fa-solid fa-glass-water"></i>
-                            </div>
-                            <span class="porto-cat-name">Drinks</span>
-                        </a>
-
-                        <a href="index.html#education" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #6366F1 0%, #4F46E5 100%);">
-                                <i class="fa-solid fa-graduation-cap"></i>
-                            </div>
-                            <span class="porto-cat-name">Education</span>
-                        </a>
-
-                        <a href="index.html#finance" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #10B981 0%, #059669 100%);">
-                                <i class="fa-solid fa-wallet"></i>
-                            </div>
-                            <span class="porto-cat-name">Finance</span>
-                        </a>
-
-                        <a href="index.html#food" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #E70820 0%, #DC2626 100%);">
-                                <i class="fa-solid fa-utensils"></i>
-                            </div>
-                            <span class="porto-cat-name">Food</span>
-                        </a>
-
-                        <a href="index.html#kids" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #F43F5E 0%, #FB7185 100%);">
-                                <i class="fa-solid fa-child"></i>
-                            </div>
-                            <span class="porto-cat-name">Kids</span>
-                        </a>
-
-                        <a href="index.html#language" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%);">
-                                <i class="fa-solid fa-language"></i>
-                            </div>
-                            <span class="porto-cat-name">Language</span>
-                        </a>
-
-                        <a href="index.html#music" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #A855F7 0%, #7E22CE 100%);">
-                                <i class="fa-solid fa-music"></i>
-                            </div>
-                            <span class="porto-cat-name">Music</span>
-                        </a>
-
-                        <a href="index.html#pastries" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #F59E0B 0%, #B45309 100%);">
-                                <i class="fa-solid fa-cookie-bite"></i>
-                            </div>
-                            <span class="porto-cat-name">Pastries</span>
-                        </a>
-
-                        <a href="index.html#pets" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #14B8A6 0%, #0D9488 100%);">
-                                <i class="fa-solid fa-paw"></i>
-                            </div>
-                            <span class="porto-cat-name">Pets</span>
-                        </a>
-
-                        <a href="index.html#places" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #0EA5E9 0%, #0369A1 100%);">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-                            <span class="porto-cat-name">Places</span>
-                        </a>
-
-                        <a href="index.html#restaurants" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #E11D48 0%, #9F1239 100%);">
-                                <i class="fa-solid fa-plate-wheat"></i>
-                            </div>
-                            <span class="porto-cat-name">Restaurants</span>
-                        </a>
-
-                        <a href="index.html#rooftop" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #64748B 0%, #334155 100%);">
-                                <i class="fa-solid fa-building"></i>
-                            </div>
-                            <span class="porto-cat-name">Rooftop</span>
-                        </a>
-
-                        <a href="index.html#services" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #6366F1 0%, #4338CA 100%);">
-                                <i class="fa-solid fa-concierge-bell"></i>
-                            </div>
-                            <span class="porto-cat-name">Services</span>
-                        </a>
-
-                        <a href="index.html#sport" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #10B981 0%, #047857 100%);">
-                                <i class="fa-solid fa-person-running"></i>
-                            </div>
-                            <span class="porto-cat-name">Sport</span>
-                        </a>
-
-                        <a href="index.html#traditions" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #D97706 0%, #B45309 100%);">
-                                <i class="fa-solid fa-wine-glass"></i>
-                            </div>
-                            <span class="porto-cat-name">Traditions</span>
-                        </a>
-
-                        <a href="index.html#trips" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #0284C7 0%, #1E3A8A 100%);">
-                                <i class="fa-solid fa-route"></i>
-                            </div>
-                            <span class="porto-cat-name">Trips</span>
-                        </a>
-
-                        <a href="index.html#vegetarian" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #22C55E 0%, #15803D 100%);">
-                                <i class="fa-solid fa-leaf"></i>
-                            </div>
-                            <span class="porto-cat-name">Vegetarian</span>
-                        </a>
-
-                        <a href="index.html#wine" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #881337 0%, #4C0519 100%);">
-                                <i class="fa-solid fa-wine-bottle"></i>
-                            </div>
-                            <span class="porto-cat-name">Wine</span>
-                        </a>
-
-                        <a href="index.html#work" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #475569 0%, #0F172A 100%);">
-                                <i class="fa-solid fa-briefcase"></i>
-                            </div>
-                            <span class="porto-cat-name">Work</span>
-                        </a>
-                    </div>
+        <!-- Filter Bar -->
+        <section class="porto-filter-section">
+            <div class="container">
+                <div class="porto-filter-bar">
+                    <button class="porto-filter-btn active" data-filter="all">ALL</button>
+                    <button class="porto-filter-btn" data-filter="food">FOOD &amp; DRINK</button>
+                    <button class="porto-filter-btn" data-filter="culture">CULTURE &amp; TOURS</button>
+                    <button class="porto-filter-btn" data-filter="sport">WELLNESS &amp; SPORT</button>
+                    <button class="porto-filter-btn" data-filter="beauty">BEAUTY</button>
+                    <button class="porto-filter-btn" data-filter="shopping">SHOPPING &amp; SERVICES</button>
+                    <button class="porto-filter-btn" data-filter="language">LANGUAGE</button>
                 </div>
-            </section>
+            </div>
+        </section>
+
+        <!-- Partner Cards Grid -->
+        <section class="porto-partners-grid">
+            <div class="container">
+                <div class="row g-4" id="partners-container">
+                    
+                    <!-- 1. Taste Porto -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="food culture">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (1).png" alt="Taste Porto Logo" class="partner-card__logo" onerror="this.src='../wp-content/uploads/2026/05/1 (1).jpg'">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">FOOD TOUR</span>
+                                    <h3 class="partner-card__title">Taste Porto</h3>
+                                </div>
+                            </div>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">5% off*</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS5</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS5')">COPY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Eurosender -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="shopping">
+                        <div class="partner-card">
+                            <div>
+                                <div class="partner-card__header">
+                                    <img src="../wp-content/uploads/2026/05/1 (2).png" alt="Eurosender Logo" class="partner-card__logo">
+                                    <div class="partner-card__meta">
+                                        <span class="partner-card__category">SHIPPING</span>
+                                        <h3 class="partner-card__title">Eurosender</h3>
+                                    </div>
+                                </div>
+                                <div class="partner-card__offers">
+                                    <div class="partner-offer-box mb-2">
+                                        <span class="partner-offer-label">10% off all parcel services</span>
+                                        <div class="partner-coupon-bar">
+                                            <span class="partner-coupon-code">PORTOEXPATS</span>
+                                            <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS')">COPY</button>
+                                        </div>
+                                    </div>
+                                    <div class="partner-offer-box">
+                                        <span class="partner-offer-label">€15 off van services</span>
+                                        <div class="partner-coupon-bar">
+                                            <span class="partner-coupon-code">PORTOEXPATS_VAN</span>
+                                            <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS_VAN')">COPY</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Experience Trindade -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="culture">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (3).png" alt="Experience Trindade Logo" class="partner-card__logo">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">MUSEUM</span>
+                                    <h3 class="partner-card__title">Experience Trindade</h3>
+                                </div>
+                            </div>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">20% off tours</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS20</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS20')">COPY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. Quinta de Villar d'Allen -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="culture food">
+                        <div class="partner-card">
+                            <div>
+                                <div class="partner-card__header">
+                                    <img src="../wp-content/uploads/2026/05/1 (4).png" alt="Quinta de Villar d'Allen Logo" class="partner-card__logo">
+                                    <div class="partner-card__meta">
+                                        <span class="partner-card__category">HISTORY · WINE TASTING</span>
+                                        <h3 class="partner-card__title">Quinta de Villar d'Allen</h3>
+                                    </div>
+                                </div>
+                                <div class="partner-card__offers">
+                                    <div class="partner-offer-box mb-2">
+                                        <span class="partner-offer-label">€2 off Garden &amp; House Experience</span>
+                                        <div class="partner-coupon-bar">
+                                            <span class="partner-coupon-code">PORTOEXPATS</span>
+                                            <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS')">COPY</button>
+                                        </div>
+                                    </div>
+                                    <div class="partner-offer-box">
+                                        <span class="partner-offer-label">€5 off Tawny &amp; Vintage Experience</span>
+                                        <div class="partner-coupon-bar">
+                                            <span class="partner-coupon-code">PORTOEXPATS</span>
+                                            <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS')">COPY</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. Criatura -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="food">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (5).png" alt="Criatura Logo" class="partner-card__logo">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">ORGANIC INFUSIONS</span>
+                                    <h3 class="partner-card__title">Criatura</h3>
+                                </div>
+                            </div>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">10% off online shop</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS10</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS10')">COPY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6. Citrodora -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="beauty shopping">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (6).png" alt="Citrodora Logo" class="partner-card__logo">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">ORGANIC COSMETICS</span>
+                                    <h3 class="partner-card__title">Citrodora</h3>
+                                </div>
+                            </div>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">10% off</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS10</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS10')">COPY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7. Português às 3 -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="language">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (7).png" alt="Português às 3 Logo" class="partner-card__logo">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">LANGUAGE</span>
+                                    <h3 class="partner-card__title">Português às 3</h3>
+                                </div>
+                            </div>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">€5 off 1st individual class</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS_3</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS_3')">COPY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8. T P Tours Porto / Tuk Tuk -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="culture">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (8).png" alt="T P Tours Porto Logo" class="partner-card__logo">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">TRAVEL</span>
+                                    <h3 class="partner-card__title">T P Tours Porto / Tuk Tuk</h3>
+                                </div>
+                            </div>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">5% off</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS5</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS5')">COPY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 9. Teresa Rego Studio -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="culture shopping">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (9).png" alt="Teresa Rego Studio Logo" class="partner-card__logo">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">ART</span>
+                                    <h3 class="partner-card__title">Teresa Rego Studio</h3>
+                                </div>
+                            </div>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">15% off online shop</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS15</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS15')">COPY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 10. AR Porto Selfie Studio -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="shopping culture">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (10).png" alt="AR Porto Selfie Studio Logo" class="partner-card__logo">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">PHOTOGRAPHY</span>
+                                    <h3 class="partner-card__title">AR Porto Selfie Studio</h3>
+                                </div>
+                            </div>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">20% off + 30 extra minutes (until Aug 26)</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS')">COPY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 11. Presidencial Fado -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="culture">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (11).png" alt="Presidencial Fado Logo" class="partner-card__logo">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">MUSIC</span>
+                                    <h3 class="partner-card__title">Presidencial Fado</h3>
+                                </div>
+                            </div>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">€4 off</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS')">COPY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 12. Hotpod Yoga Porto -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="sport">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (12).png" alt="Hotpod Yoga Porto Logo" class="partner-card__logo">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">SPORT</span>
+                                    <h3 class="partner-card__title">Hotpod Yoga Porto</h3>
+                                </div>
+                            </div>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">25% off 1st class</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS25</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS25')">COPY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 13. Health & Breath -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="sport">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (13).png" alt="Health & Breath Logo" class="partner-card__logo">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">SPORT</span>
+                                    <h3 class="partner-card__title">Health &amp; Breath</h3>
+                                </div>
+                            </div>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">20% off</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS20</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS20')">COPY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 14. Beyond Studio Pilates -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="sport">
+                        <div class="partner-card">
+                            <div>
+                                <div class="partner-card__header">
+                                    <img src="../wp-content/uploads/2026/05/1 (14).png" alt="Beyond Studio Pilates Logo" class="partner-card__logo">
+                                    <div class="partner-card__meta">
+                                        <span class="partner-card__category">SPORT</span>
+                                        <h3 class="partner-card__title">Beyond Studio Pilates</h3>
+                                    </div>
+                                </div>
+                                <div class="partner-card__offers">
+                                    <div class="partner-offer-box mb-2">
+                                        <span class="partner-offer-label">Free 1st class</span>
+                                        <div class="partner-coupon-bar">
+                                            <span class="partner-coupon-code">PORTOEXPATS10</span>
+                                            <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS10')">COPY</button>
+                                        </div>
+                                    </div>
+                                    <div class="partner-offer-box">
+                                        <span class="partner-offer-label">10% off following classes</span>
+                                        <div class="partner-coupon-bar">
+                                            <span class="partner-coupon-code">PORTOEXPATS10</span>
+                                            <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS10')">COPY</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 15. Brizza -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="shopping">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (15).png" alt="Brizza Logo" class="partner-card__logo">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">CLOTHES</span>
+                                    <h3 class="partner-card__title">Brizza</h3>
+                                </div>
+                            </div>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">10% off</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS10</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS10')">COPY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 16. Check Cheburek -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="food">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (16).png" alt="Check Cheburek Logo" class="partner-card__logo">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">FOOD</span>
+                                    <h3 class="partner-card__title">Check Cheburek</h3>
+                                </div>
+                            </div>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">10% off</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS10</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS10')">COPY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 17. Eva Beauty Hub -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="beauty">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (1).webp" alt="Eva Beauty Hub Logo" class="partner-card__logo" onerror="this.src='../wp-content/uploads/2026/05/1 (1).png'">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">BEAUTY</span>
+                                    <h3 class="partner-card__title">Eva Beauty Hub</h3>
+                                </div>
+                            </div>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">10% off selected services**</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS')">COPY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 18. ESTÉTICA by Victoria -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="beauty">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (6).png" alt="ESTÉTICA by Victoria Logo" class="partner-card__logo" onerror="this.src='../wp-content/uploads/2026/05/1 (1).png'">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">BEAUTY</span>
+                                    <h3 class="partner-card__title">ESTÉTICA by Victoria</h3>
+                                </div>
+                            </div>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">15% off 1st treatment</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS15</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS15')">COPY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
 
             <!-- latest-updates -->
             <section class="latest-updates-3__area grey-bg section-space-bottom porto-insta-world">
@@ -4904,7 +5384,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     document.querySelectorAll('.section__title').forEach(function (heading) {
-        if (heading.textContent.trim() !== 'Popular Posts') return;
+        if (heading.textContent.trim() !== 'Popular Posts' && heading.textContent.trim() !== 'Explore by Category') return;
         var section = heading.closest('.e-con.e-parent');
         if (section && section.textContent.includes('Latest Updates') && section.textContent.includes('Recent Posts')) {
             section.style.display = 'none';
@@ -4947,6 +5427,41 @@ document.addEventListener('DOMContentLoaded', function () {
         var shouldStick = window.innerWidth >= 1200 && window.scrollY > stickyStart;
         navigation.classList.toggle('porto-nav-fixed', shouldStick);
         spacer.style.height = shouldStick ? navigation.offsetHeight + 'px' : '0px';
+    }
+
+    function copyCode(btn, code) {
+        if (navigator.clipboard) {
+            navigator.clipboard.writeText(code).then(function() {
+                var originalText = btn.innerText;
+                btn.innerText = 'COPIED!';
+                btn.classList.add('copied');
+                setTimeout(function() {
+                    btn.innerText = originalText;
+                    btn.classList.remove('copied');
+                }, 2000);
+            });
+        }
+    }
+    window.copyCode = copyCode;
+
+    var partnerFilterBtns = document.querySelectorAll('.porto-filter-btn');
+    var partnerItems = document.querySelectorAll('.partner-item');
+    if (partnerFilterBtns.length && partnerItems.length) {
+        partnerFilterBtns.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                partnerFilterBtns.forEach(function(b) { b.classList.remove('active'); });
+                btn.classList.add('active');
+                var filterValue = btn.getAttribute('data-filter');
+                partnerItems.forEach(function(item) {
+                    var categories = item.getAttribute('data-category') || '';
+                    if (filterValue === 'all' || categories.indexOf(filterValue) !== -1) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
     }
 
     window.addEventListener('scroll', update, { passive: true });
