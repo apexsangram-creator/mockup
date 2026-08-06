@@ -513,6 +513,195 @@ background: #F3F4F6 !important;
 .porto-cat-item:hover .porto-cat-name {
     color: #E70820;
 }
+
+/* Custom Icon Micro-Animations on Hover */
+.porto-cat-icon-circle i {
+    display: inline-block;
+    transition: transform 0.25s ease;
+}
+
+/* Sport (Running) */
+.porto-cat-item:hover .fa-person-running {
+    animation: cat-run 0.45s infinite alternate ease-in-out;
+}
+@keyframes cat-run {
+    0% { transform: translateX(-3px) rotate(-12deg); }
+    100% { transform: translateX(5px) rotate(15deg) translateY(-2px); }
+}
+
+/* Art (Palette Painting Wiggle) */
+.porto-cat-item:hover .fa-palette {
+    animation: cat-palette 0.7s infinite alternate ease-in-out;
+}
+@keyframes cat-palette {
+    0% { transform: rotate(-20deg) scale(1.1); }
+    100% { transform: rotate(20deg) scale(1.15); }
+}
+
+/* Bars & Drinks (Cheering Toast) */
+.porto-cat-item:hover .fa-martini-glass-citrus,
+.porto-cat-item:hover .fa-glass-water {
+    animation: cat-cheers 0.5s infinite alternate ease-in-out;
+}
+@keyframes cat-cheers {
+    0% { transform: rotate(-15deg) scale(1.05); }
+    100% { transform: rotate(22deg) scale(1.25); }
+}
+
+/* Beaches (Umbrella Sway) */
+.porto-cat-item:hover .fa-umbrella-beach {
+    animation: cat-sway 0.8s infinite alternate ease-in-out;
+}
+@keyframes cat-sway {
+    0% { transform: rotate(-14deg); }
+    100% { transform: rotate(14deg) translateY(-3px); }
+}
+
+/* Cafes (Hot Coffee Steam Bounce) */
+.porto-cat-item:hover .fa-mug-hot {
+    animation: cat-steam 0.6s infinite alternate ease-in-out;
+}
+@keyframes cat-steam {
+    0% { transform: translateY(0) scale(1); }
+    100% { transform: translateY(-5px) scale(1.15); }
+}
+
+/* Education (Graduation Cap Toss) */
+.porto-cat-item:hover .fa-graduation-cap {
+    animation: cat-toss 0.6s infinite alternate ease-in-out;
+}
+@keyframes cat-toss {
+    0% { transform: translateY(0) rotate(0); }
+    100% { transform: translateY(-7px) rotate(-12deg) scale(1.15); }
+}
+
+/* Finance (Wallet Jingle) */
+.porto-cat-item:hover .fa-wallet {
+    animation: cat-jingle 0.35s infinite alternate ease-in-out;
+}
+@keyframes cat-jingle {
+    0% { transform: rotate(-12deg) scale(1.1); }
+    100% { transform: rotate(12deg) scale(1.1); }
+}
+
+/* Food & Restaurants (Utensils Action) */
+.porto-cat-item:hover .fa-utensils,
+.porto-cat-item:hover .fa-plate-wheat {
+    animation: cat-eat 0.5s infinite alternate ease-in-out;
+}
+@keyframes cat-eat {
+    0% { transform: scale(1) rotate(-8deg); }
+    100% { transform: scale(1.2) rotate(8deg); }
+}
+
+/* Kids (Happy Jumping) */
+.porto-cat-item:hover .fa-child {
+    animation: cat-jump 0.4s infinite alternate ease-in-out;
+}
+@keyframes cat-jump {
+    0% { transform: translateY(0) scale(1); }
+    100% { transform: translateY(-8px) scale(1.2); }
+}
+
+/* Language (Speech Flip) */
+.porto-cat-item:hover .fa-language {
+    animation: cat-flip 0.7s infinite alternate ease-in-out;
+}
+@keyframes cat-flip {
+    0% { transform: scale(1) rotate(-10deg); }
+    100% { transform: scale(1.2) rotate(10deg); }
+}
+
+/* Music (Beat Pulse & Wiggle) */
+.porto-cat-item:hover .fa-music {
+    animation: cat-music 0.4s infinite alternate ease-in-out;
+}
+@keyframes cat-music {
+    0% { transform: scale(1) rotate(-12deg); }
+    100% { transform: scale(1.3) rotate(14deg); }
+}
+
+/* Pastries (Bite Pulse) */
+.porto-cat-item:hover .fa-cookie-bite {
+    animation: cat-munch 0.5s infinite alternate ease-in-out;
+}
+@keyframes cat-munch {
+    0% { transform: rotate(0) scale(1); }
+    100% { transform: rotate(-15deg) scale(1.2); }
+}
+
+/* Pets (Paw Walking) */
+.porto-cat-item:hover .fa-paw {
+    animation: cat-paw 0.45s infinite alternate ease-in-out;
+}
+@keyframes cat-paw {
+    0% { transform: rotate(-15deg) scale(1); }
+    100% { transform: rotate(15deg) scale(1.2) translateY(-3px); }
+}
+
+/* Places (Pin Bouncing) */
+.porto-cat-item:hover .fa-location-dot {
+    animation: cat-pin 0.5s infinite alternate ease-in-out;
+}
+@keyframes cat-pin {
+    0% { transform: translateY(0) scale(1); }
+    100% { transform: translateY(-7px) scale(1.2); }
+}
+
+/* Rooftop ( Skyline Rising) */
+.porto-cat-item:hover .fa-building {
+    animation: cat-rise 0.6s infinite alternate ease-in-out;
+}
+@keyframes cat-rise {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px) scale(1.12); }
+}
+
+/* Services (Ringing Bell) */
+.porto-cat-item:hover .fa-concierge-bell {
+    animation: cat-ring 0.3s infinite alternate ease-in-out;
+}
+@keyframes cat-ring {
+    0% { transform: rotate(-18deg); }
+    100% { transform: rotate(18deg); }
+}
+
+/* Traditions & Wine (Pouring Wine) */
+.porto-cat-item:hover .fa-wine-glass,
+.porto-cat-item:hover .fa-wine-bottle {
+    animation: cat-pour 0.6s infinite alternate ease-in-out;
+}
+@keyframes cat-pour {
+    0% { transform: rotate(0) scale(1); }
+    100% { transform: rotate(-28deg) translateY(-2px) scale(1.15); }
+}
+
+/* Trips (Moving Route) */
+.porto-cat-item:hover .fa-route {
+    animation: cat-travel 0.6s infinite alternate ease-in-out;
+}
+@keyframes cat-travel {
+    0% { transform: translateX(-3px) scale(1); }
+    100% { transform: translateX(4px) scale(1.18); }
+}
+
+/* Vegetarian (Fluttering Leaf) */
+.porto-cat-item:hover .fa-leaf {
+    animation: cat-leaf 0.65s infinite alternate ease-in-out;
+}
+@keyframes cat-leaf {
+    0% { transform: rotate(-15deg) scale(1); }
+    100% { transform: rotate(25deg) scale(1.2); }
+}
+
+/* Work (Briefcase Lift) */
+.porto-cat-item:hover .fa-briefcase {
+    animation: cat-work 0.5s infinite alternate ease-in-out;
+}
+@keyframes cat-work {
+    0% { transform: translateY(0) rotate(0); }
+    100% { transform: translateY(-5px) rotate(8deg) scale(1.12); }
+}
 @media (max-width: 768px) {
     .porto-cat-grid {
         gap: 28px 18px;
