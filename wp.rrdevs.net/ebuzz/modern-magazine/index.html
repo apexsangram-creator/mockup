@@ -1151,11 +1151,31 @@ background: #F3F4F6 !important;
 .porto-hero .new-post-3__title a {
     color: var(--white);
 }
-.porto-hero .new-post-3__title {
-    font-family: "Poppins", sans-serif;
-    font-size: clamp(28px, 3vw, 42px);
-    line-height: 1.16;
-    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.32);
+.porto-hero .new-post-3__title,
+.porto-shimmer-title {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: clamp(36px, 5vw, 54px) !important;
+    font-weight: 800 !important;
+    line-height: 1.1 !important;
+    margin-bottom: 12px !important;
+    background: linear-gradient(90deg, #FFFFFF 0%, #ECFF70 25%, #FFFFFF 50%, #FF5722 75%, #FFFFFF 100%) !important;
+    background-size: 200% auto !important;
+    color: transparent !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    animation: porto-shimmer 3s linear infinite !important;
+    display: inline-block !important;
+}
+@keyframes porto-shimmer {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
+}
+.porto-hero-subtitle {
+    font-size: clamp(16px, 2vw, 20px) !important;
+    color: rgba(255, 255, 255, 0.95) !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.2px !important;
+    margin: 0 !important;
 }
 .porto-hero .new-post-3__dec {
     font-size: 16px;
@@ -1774,13 +1794,13 @@ background: #F3F4F6 !important;
                                             <div class="banner-section__item wow fadeInUp" data-wow-duration="0.7s" data-wow-delay="0.2s">
                                                 <div class="banner-section__content">
                                                     <div class="new-post-3__info">
-                                                        <h3 class="new-post-3__title">
-                                                            <a href="../how-sustainable-tourism-is-changing-the-way-we-see-the-world-2/index.html">
-                                                                How Sustainable Tourism Is Changing the Way We See the World                                                            </a>
-                                                        </h3>
+                                                        <h1 class="new-post-3__title porto-shimmer-title">
+                                                             Porto Expats
+                                                         </h1>
 
-                                                                                                                    <p class="new-post-3__dec custom_description">
-                                                                Quickly predominate enabled technology and web-enabled schemas. Completely evisculate diverse communities whereas pandemic data. Quickly build covalent data after turnkey…                                                            </p>
+                                                         <p class="new-post-3__dec custom_description porto-hero-subtitle">
+                                                             Connecting expats with locals
+                                                         </p>
                                                         
                                                     </div>
                                                 </div>
