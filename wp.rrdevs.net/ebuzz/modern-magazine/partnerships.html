@@ -2,7 +2,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
-    <title>Newsletter - Porto Expats</title>
+    <title>Partnerships - Porto Expats</title>
 <meta name="robots" content="noindex, nofollow">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="alternate" type="application/rss+xml" title="ebuzz » Feed" href="https://wp.rrdevs.net/ebuzz/feed/">
@@ -166,345 +166,263 @@ html:root{
     }
 }
 
-/* Custom Styles for Newsletter Page */
-.porto-newsletter-hero {
-    background: linear-gradient(135deg, #FF5722 0%, #E70820 50%, #9B51E0 100%);
-    padding: 85px 0 95px;
-    position: relative;
+/* Custom Partnerships Page Styles */
+.porto-partner-hero {
+    background: linear-gradient(135deg, #0284C7 0%, #1E3A8A 60%, #0F2744 100%);
+    padding: 75px 0 80px;
     color: #ffffff;
-    overflow: hidden;
+    text-align: center;
+    position: relative;
 }
-.porto-newsletter-hero::before {
-    content: "";
-    position: absolute;
-    top: -40%;
-    right: -10%;
-    width: 550px;
-    height: 550px;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
-    border-radius: 50%;
-    pointer-events: none;
-}
-.porto-newsletter-hero__badge {
+.porto-partner-hero__badge {
     display: inline-flex;
     align-items: center;
     gap: 8px;
     background: rgba(255, 255, 255, 0.18);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.35);
-    padding: 6px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 6px 18px;
     border-radius: 999px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.5px;
     color: #ECFF70;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
 }
-.porto-newsletter-hero__title {
+.porto-partner-hero__title {
     font-family: 'Poppins', sans-serif;
-    font-size: clamp(38px, 5vw, 56px);
+    font-size: clamp(34px, 4vw, 48px);
     font-weight: 800;
     color: #ffffff !important;
-    margin-bottom: 18px;
-    line-height: 1.1;
+    margin-bottom: 14px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.15);
 }
-.porto-newsletter-hero__subtitle {
-    font-size: clamp(16px, 2.2vw, 20px);
-    color: rgba(255, 255, 255, 0.92);
-    max-width: 780px;
-    line-height: 1.6;
+.porto-partner-hero__subtitle {
+    font-size: clamp(15px, 1.8vw, 18px);
+    color: #F1F5F9 !important;
+    max-width: 680px;
     margin: 0 auto;
-    font-weight: 400;
-}
-.porto-breadcrumb {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: 25px;
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.75);
-}
-.porto-breadcrumb a {
-    color: #ffffff;
-    transition: color 0.2s ease;
-}
-.porto-breadcrumb a:hover {
-    color: #ECFF70;
-}
-
-/* Newsletter Main Section */
-.porto-newsletter-section {
-    padding: 90px 0 80px;
-    background: #F8FAF6;
-}
-.porto-newsletter-card {
-    background: #ffffff;
-    border-radius: 24px;
-    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.07);
-    padding: 45px;
-    height: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-}
-.porto-newsletter-guide-header {
-    margin-bottom: 25px;
-}
-.porto-newsletter-guide-header h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 28px;
-    font-weight: 700;
-    color: #0F172A;
-    margin-bottom: 12px;
-}
-.porto-newsletter-desc {
-    font-size: 18px;
-    line-height: 1.75;
-    color: #334155;
-    margin-bottom: 30px;
-    font-weight: 400;
-    border-left: 4px solid #E70820;
-    padding-left: 18px;
-    background: rgba(231, 8, 32, 0.03);
-    padding-top: 12px;
-    padding-bottom: 12px;
-    border-radius: 0 12px 12px 0;
-}
-
-/* Feature List Inside Guide */
-.porto-feature-list {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-.porto-feature-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-    background: #F8FAFC;
-    padding: 16px 20px;
-    border-radius: 16px;
-    border: 1px solid #F1F5F9;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.porto-feature-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
-}
-.porto-feature-icon {
-    width: 44px;
-    height: 44px;
-    border-radius: 12px;
-    background: #10B981;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    flex-shrink: 0;
-}
-.porto-feature-text h5 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    color: #0F172A;
-    margin-bottom: 4px;
-}
-.porto-feature-text p {
-    font-size: 14px;
-    color: #64748B;
-    margin: 0;
     line-height: 1.5;
 }
 
-/* Substack Card Styling */
-.porto-substack-card {
-    background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
-    border-radius: 24px;
-    padding: 45px 38px;
+/* Category Filter Bar */
+.porto-filter-section {
+    padding: 35px 0 20px;
+    background: #F8FAF6;
+}
+.porto-filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+.porto-filter-btn {
+    background: #ffffff;
+    color: #334155;
+    border: 1.5px solid #E2E8F0;
+    padding: 10px 24px;
+    border-radius: 999px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+.porto-filter-btn:hover {
+    border-color: #0F2744;
+    color: #0F2744;
+}
+.porto-filter-btn.active {
+    background: #0F2744;
     color: #ffffff;
-    box-shadow: 0 25px 50px rgba(15, 23, 42, 0.18);
-    position: relative;
-    overflow: hidden;
+    border-color: #0F2744;
+    box-shadow: 0 4px 14px rgba(15, 39, 68, 0.25);
+}
+
+/* Partner Card Layout with Wavy & Tinted Backgrounds */
+.porto-partners-grid {
+    padding-bottom: 70px;
+    background: #F8FAF6;
+}
+.partner-card {
+    background-color: #ffffff;
+    background-image: 
+        radial-gradient(at 90% 10%, rgba(2, 132, 199, 0.06) 0px, transparent 50%),
+        radial-gradient(at 10% 90%, rgba(231, 8, 32, 0.05) 0px, transparent 50%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='400' viewBox='0 0 500 400'%3E%3Cpath fill='none' stroke='rgba(15,23,42,0.045)' stroke-width='2.5' d='M-50,100 C120,220 280,30 550,150 M-50,180 C150,40 350,300 550,120 M-50,260 C100,360 380,120 550,280 M-50,340 C180,200 320,380 550,240'/%3E%3Cpath fill='rgba(15,23,42,0.018)' d='M0,180 C150,290 350,90 500,220 L500,400 L0,400 Z'/%3E%3C/svg%3E");
+    background-size: cover;
+    background-position: center;
+    border-radius: 22px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    padding: 26px;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-.porto-substack-card::before {
-    content: "";
-    position: absolute;
-    top: -50px;
-    right: -50px;
-    width: 220px;
-    height: 220px;
-    background: radial-gradient(circle, rgba(255, 103, 25, 0.25) 0%, transparent 70%);
-    border-radius: 50%;
-    pointer-events: none;
-}
-.porto-substack-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: #FF6719;
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    font-size: 13px;
-    font-weight: 700;
-    padding: 5px 14px;
-    border-radius: 999px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 20px;
-    width: fit-content;
-}
-.porto-substack-title {
-    font-family: 'Poppins', sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.35;
-    margin-bottom: 16px;
-    color: #ffffff;
-}
-.porto-substack-callout {
-    font-size: 16px;
-    line-height: 1.65;
-    color: #CBD5E1;
-    margin-bottom: 30px;
-}
-.porto-substack-form {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    margin-bottom: 25px;
-}
-.porto-substack-input {
-    width: 100%;
-    padding: 16px 20px;
-    border-radius: 14px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background: rgba(255, 255, 255, 0.08);
-    color: #ffffff;
-    font-size: 15px;
-    outline: none;
-    transition: border-color 0.2s ease;
-}
-.porto-substack-input::placeholder {
-    color: #94A3B8;
-}
-.porto-substack-input:focus {
-    border-color: #FF6719;
-    background: rgba(255, 255, 255, 0.12);
-}
-.porto-substack-btn {
-    width: 100%;
-    background: #FF6719;
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    padding: 16px 24px;
-    border-radius: 14px;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
-    text-decoration: none;
-}
-.porto-substack-btn:hover {
-    background: #E5560E;
-    color: #ffffff;
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(255, 103, 25, 0.4);
-}
-.porto-substack-trust {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    font-size: 13px;
-    color: #94A3B8;
-}
-.porto-substack-trust span {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-.porto-substack-trust i {
-    color: #FF6719;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s ease, border-color 0.28s ease;
 }
 
-/* Preview Issue Section */
-.porto-preview-section {
-    padding: 0 0 90px;
-    background: #F8FAF6;
+/* Category Tint Variations */
+.partner-item[data-category*="food"] .partner-card {
+    background-color: #FFFBF5;
+    background-image: 
+        radial-gradient(at 85% 15%, rgba(245, 158, 11, 0.12) 0px, transparent 60%),
+        radial-gradient(at 15% 85%, rgba(231, 8, 32, 0.06) 0px, transparent 60%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='400' viewBox='0 0 500 400'%3E%3Cpath fill='none' stroke='rgba(194,65,12,0.06)' stroke-width='2.5' d='M-50,100 C120,220 280,30 550,150 M-50,180 C150,40 350,300 550,120 M-50,260 C100,360 380,120 550,280'/%3E%3Cpath fill='rgba(245,158,11,0.03)' d='M0,180 C150,290 350,90 500,220 L500,400 L0,400 Z'/%3E%3C/svg%3E");
 }
-.porto-preview-card {
-    background: #ffffff;
-    border-radius: 24px;
-    padding: 40px;
-    border: 1px solid rgba(0, 0, 0, 0.06);
-    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.04);
+.partner-item[data-category*="culture"] .partner-card {
+    background-color: #F0F9FF;
+    background-image: 
+        radial-gradient(at 85% 15%, rgba(2, 132, 199, 0.12) 0px, transparent 60%),
+        radial-gradient(at 15% 85%, rgba(99, 102, 241, 0.06) 0px, transparent 60%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='400' viewBox='0 0 500 400'%3E%3Cpath fill='none' stroke='rgba(2,132,199,0.06)' stroke-width='2.5' d='M-50,100 C120,220 280,30 550,150 M-50,180 C150,40 350,300 550,120 M-50,260 C100,360 380,120 550,280'/%3E%3Cpath fill='rgba(2,132,199,0.03)' d='M0,180 C150,290 350,90 500,220 L500,400 L0,400 Z'/%3E%3C/svg%3E");
 }
-.porto-preview-header {
+.partner-item[data-category*="sport"] .partner-card {
+    background-color: #F5F3FF;
+    background-image: 
+        radial-gradient(at 85% 15%, rgba(139, 92, 246, 0.12) 0px, transparent 60%),
+        radial-gradient(at 15% 85%, rgba(16, 185, 129, 0.06) 0px, transparent 60%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='400' viewBox='0 0 500 400'%3E%3Cpath fill='none' stroke='rgba(139,92,246,0.06)' stroke-width='2.5' d='M-50,100 C120,220 280,30 550,150 M-50,180 C150,40 350,300 550,120 M-50,260 C100,360 380,120 550,280'/%3E%3Cpath fill='rgba(139,92,246,0.03)' d='M0,180 C150,290 350,90 500,220 L500,400 L0,400 Z'/%3E%3C/svg%3E");
+}
+.partner-item[data-category*="beauty"] .partner-card {
+    background-color: #FFF1F2;
+    background-image: 
+        radial-gradient(at 85% 15%, rgba(244, 63, 94, 0.12) 0px, transparent 60%),
+        radial-gradient(at 15% 85%, rgba(236, 72, 153, 0.06) 0px, transparent 60%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='400' viewBox='0 0 500 400'%3E%3Cpath fill='none' stroke='rgba(244,63,94,0.06)' stroke-width='2.5' d='M-50,100 C120,220 280,30 550,150 M-50,180 C150,40 350,300 550,120 M-50,260 C100,360 380,120 550,280'/%3E%3Cpath fill='rgba(244,63,94,0.03)' d='M0,180 C150,290 350,90 500,220 L500,400 L0,400 Z'/%3E%3C/svg%3E");
+}
+.partner-item[data-category*="shopping"] .partner-card {
+    background-color: #F8FAFC;
+    background-image: 
+        radial-gradient(at 85% 15%, rgba(71, 85, 105, 0.10) 0px, transparent 60%),
+        radial-gradient(at 15% 85%, rgba(15, 23, 42, 0.05) 0px, transparent 60%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='400' viewBox='0 0 500 400'%3E%3Cpath fill='none' stroke='rgba(71,85,105,0.06)' stroke-width='2.5' d='M-50,100 C120,220 280,30 550,150 M-50,180 C150,40 350,300 550,120 M-50,260 C100,360 380,120 550,280'/%3E%3Cpath fill='rgba(71,85,105,0.03)' d='M0,180 C150,290 350,90 500,220 L500,400 L0,400 Z'/%3E%3C/svg%3E");
+}
+.partner-item[data-category*="language"] .partner-card {
+    background-color: #FFFBEB;
+    background-image: 
+        radial-gradient(at 85% 15%, rgba(217, 119, 6, 0.12) 0px, transparent 60%),
+        radial-gradient(at 15% 85%, rgba(245, 158, 11, 0.06) 0px, transparent 60%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='400' viewBox='0 0 500 400'%3E%3Cpath fill='none' stroke='rgba(217,119,6,0.06)' stroke-width='2.5' d='M-50,100 C120,220 280,30 550,150 M-50,180 C150,40 350,300 550,120 M-50,260 C100,360 380,120 550,280'/%3E%3Cpath fill='rgba(217,119,6,0.03)' d='M0,180 C150,290 350,90 500,220 L500,400 L0,400 Z'/%3E%3C/svg%3E");
+}
+
+.partner-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 38px rgba(15, 23, 42, 0.1);
+    border-color: rgba(15, 23, 42, 0.18);
+}
+
+/* Card Header */
+.partner-card__header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-bottom: 25px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #E2E8F0;
+    gap: 16px;
+    margin-bottom: 20px;
 }
-.porto-preview-header h3 {
+.partner-card__logo {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    object-fit: contain;
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    padding: 6px;
+    flex-shrink: 0;
+}
+.partner-card__meta {
+    flex-grow: 1;
+}
+.partner-card__category {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: #0284C7;
+    margin-bottom: 2px;
+    display: block;
+}
+.partner-card__title {
     font-family: 'Poppins', sans-serif;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
     color: #0F172A;
     margin: 0;
-}
-.porto-preview-tag {
-    background: #EEF2FF;
-    color: #4F46E5;
-    font-size: 13px;
-    font-weight: 700;
-    padding: 6px 14px;
-    border-radius: 999px;
-}
-.porto-word-box {
-    background: #EFF6FF;
-    border: 1px solid #BFDBFE;
-    border-radius: 16px;
-    padding: 22px;
-    margin-top: 20px;
-}
-.porto-word-box h5 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    color: #1E40AF;
-    margin-bottom: 8px;
-}
-.porto-word-highlight {
-    font-size: 22px;
-    font-weight: 800;
-    color: #1D4ED8;
-    margin-bottom: 6px;
-}
-.porto-word-box p {
-    font-size: 14px;
-    color: #1E3A8A;
-    margin: 0;
-    line-height: 1.6;
+    line-height: 1.25;
 }
 
-@media (max-width: 991px) {
-    .porto-newsletter-card, .porto-substack-card {
-        padding: 30px 24px;
+/* Offer Boxes */
+.partner-card__offers {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.partner-offer-box {
+    background: #FAF3E8;
+    border-radius: 14px;
+    padding: 14px 16px;
+}
+.partner-offer-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #C2410C;
+    margin-bottom: 10px;
+    display: block;
+    line-height: 1.3;
+}
+.partner-coupon-bar {
+    background: #0F2744;
+    border-radius: 10px;
+    padding: 6px 6px 6px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+.partner-coupon-code {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    word-break: break-all;
+}
+.partner-copy-btn {
+    background: #254468;
+    color: #ffffff;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 7px 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    flex-shrink: 0;
+}
+.partner-copy-btn:hover {
+    background: #3B618E;
+    color: #ffffff;
+}
+.partner-copy-btn.copied {
+    background: #10B981;
+    color: #ffffff;
+}
+
+@media (max-width: 767px) {
+    .partner-card {
+        padding: 20px;
+    }
+    .porto-filter-btn {
+        padding: 8px 16px;
+        font-size: 12px;
     }
 }
 </style>
@@ -605,8 +523,8 @@ html:root{
                                                     <ul id="menu-1-ec4d2bb" class="ebuzz-nav-menu sub-menu">
                                                         <li class="menu-item nav-item"><a title="Home" href="index.html" class="nav-links">Home</a></li>
                                                         <li class="menu-item nav-item"><a title="About" href="about.html" class="nav-links">About</a></li>
-                                                        <li class="menu-item nav-item active"><a title="Newsletter" href="newsletter.html" class="nav-links active">Newsletter</a></li>
-                                                        <li class="menu-item nav-item"><a title="Partnerships" href="partnerships.html" class="nav-links">Partnerships</a></li>
+                                                        <li class="menu-item nav-item"><a title="Newsletter" href="newsletter.html" class="nav-links">Newsletter</a></li>
+                                                        <li class="menu-item nav-item active"><a title="Partnerships" href="partnerships.html" class="nav-links active">Partnerships</a></li>
                                                         <li class="menu-item nav-item"><a title="Contact" href="../contact/index.html" class="nav-links">Contact</a></li>
                                                     </ul>
                                                 </nav>
@@ -623,178 +541,472 @@ html:root{
     </div>
     <!-- Header End -->
 
-    <!-- Main Content Body -->
+    <!-- Main Content Area -->
     <main>
         
         <!-- Hero Section -->
-        <section class="porto-newsletter-hero text-center">
+        <section class="porto-partner-hero">
             <div class="container">
-                <div class="porto-newsletter-hero__badge">
-                    <i class="fa-regular fa-paper-plane"></i> PORTO EXPATS WEEKLY
+                <div class="porto-partner-hero__badge">
+                    <i class="fa-solid fa-handshake"></i> EXCLUSIVE PORTO EXPATS DEALS
                 </div>
-                <h1 class="porto-newsletter-hero__title">Newsletter</h1>
-                <p class="porto-newsletter-hero__subtitle">
-                    Porto Expats: your weekly guide to Porto life – cultural events, active outings, hidden gems, top eats &amp; drinks, day‑trip inspo, plus a handy Portuguese word. Discover, explore, feel at home.
+                <h1 class="porto-partner-hero__title">Partnerships &amp; Member Perks</h1>
+                <p class="porto-partner-hero__subtitle">
+                    Enjoy exclusive discounts, promo codes, and special offers from our curated local partners across Porto.
                 </p>
-                <div class="porto-breadcrumb">
-                    <a href="index.html">Home</a>
-                    <i class="fa-solid fa-chevron-right fs-12"></i>
-                    <span>Newsletter</span>
+            </div>
+        </section>
+
+        <!-- Filter Bar -->
+        <section class="porto-filter-section">
+            <div class="container">
+                <div class="porto-filter-bar">
+                    <button class="porto-filter-btn active" data-filter="all">ALL</button>
+                    <button class="porto-filter-btn" data-filter="food">FOOD &amp; DRINK</button>
+                    <button class="porto-filter-btn" data-filter="culture">CULTURE &amp; TOURS</button>
+                    <button class="porto-filter-btn" data-filter="sport">WELLNESS &amp; SPORT</button>
+                    <button class="porto-filter-btn" data-filter="beauty">BEAUTY</button>
+                    <button class="porto-filter-btn" data-filter="shopping">SHOPPING &amp; SERVICES</button>
+                    <button class="porto-filter-btn" data-filter="language">LANGUAGE</button>
                 </div>
             </div>
         </section>
 
-        <!-- Main Section: Newsletter Features & Substack Subscribe Card -->
-        <section class="porto-newsletter-section">
+        <!-- Partner Cards Grid -->
+        <section class="porto-partners-grid">
             <div class="container">
-                <div class="row g-4 align-items-stretch">
+                <div class="row g-4" id="partners-container">
                     
-                    <!-- Left Column: Guide Content & Features -->
-                    <div class="col-lg-7">
-                        <div class="porto-newsletter-card">
-                            <div class="porto-newsletter-guide-header">
-                                <h2>Your Essential Weekly Companion in Porto</h2>
-                                <p class="porto-newsletter-desc">
-                                    Porto Expats: your weekly guide to Porto life – cultural events, active outings, hidden gems, top eats &amp; drinks, day‑trip inspo, plus a handy Portuguese word. Discover, explore, feel at home.
-                                </p>
+                    <!-- 1. Taste Porto -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="food culture">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (1).png" alt="Taste Porto Logo" class="partner-card__logo" onerror="this.src='../wp-content/uploads/2026/05/1 (1).jpg'">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">FOOD TOUR</span>
+                                    <h3 class="partner-card__title">Taste Porto</h3>
+                                </div>
                             </div>
-
-                            <div class="porto-feature-list">
-                                <div class="porto-feature-item">
-                                    <div class="porto-feature-icon" style="background:#8B5CF6;">
-                                        <i class="fa-solid fa-masks-theater"></i>
-                                    </div>
-                                    <div class="porto-feature-text">
-                                        <h5>Cultural Events &amp; Local Festivals</h5>
-                                        <p>Concerts, art exhibitions, street markets, and traditional neighborhood festas across Porto &amp; Gaia.</p>
-                                    </div>
-                                </div>
-
-                                <div class="porto-feature-item">
-                                    <div class="porto-feature-icon" style="background:#06B6D4;">
-                                        <i class="fa-solid fa-person-hiking"></i>
-                                    </div>
-                                    <div class="porto-feature-text">
-                                        <h5>Active Outings &amp; Coastal Adventures</h5>
-                                        <p>Surf sessions in Matosinhos, scenic coastal bike rides, and riverbank trails along the Douro.</p>
-                                    </div>
-                                </div>
-
-                                <div class="porto-feature-item">
-                                    <div class="porto-feature-icon" style="background:#EF4444;">
-                                        <i class="fa-solid fa-utensils"></i>
-                                    </div>
-                                    <div class="porto-feature-text">
-                                        <h5>Hidden Gems, Top Eats &amp; Drinks</h5>
-                                        <p>Authentic local tascas, cozy specialty coffee spots, and rooftop port wine bars loved by locals.</p>
-                                    </div>
-                                </div>
-
-                                <div class="porto-feature-item">
-                                    <div class="porto-feature-icon" style="background:#F59E0B;">
-                                        <i class="fa-solid fa-compass"></i>
-                                    </div>
-                                    <div class="porto-feature-text">
-                                        <h5>Day‑Trip Inspiration</h5>
-                                        <p>Quick weekend getaways to Guimarães, Braga, Aveiro, Arouca Geopark, and Douro Valley vineyards.</p>
-                                    </div>
-                                </div>
-
-                                <div class="porto-feature-item">
-                                    <div class="porto-feature-icon" style="background:#10B981;">
-                                        <i class="fa-solid fa-language"></i>
-                                    </div>
-                                    <div class="porto-feature-text">
-                                        <h5>Handy Portuguese Word of the Week</h5>
-                                        <p>Useful local vocabulary, pronunciation guides, and authentic expressions to feel right at home.</p>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">5% off*</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS5</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS5')">COPY</button>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
 
-                    <!-- Right Column: Substack Card -->
-                    <div class="col-lg-5">
-                        <div class="porto-substack-card">
+                    <!-- 2. Eurosender -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="shopping">
+                        <div class="partner-card">
                             <div>
-                                <div class="porto-substack-badge">
-                                    <i class="fa-solid fa-bookmark"></i> Substack Edition
+                                <div class="partner-card__header">
+                                    <img src="../wp-content/uploads/2026/05/1 (2).png" alt="Eurosender Logo" class="partner-card__logo">
+                                    <div class="partner-card__meta">
+                                        <span class="partner-card__category">SHIPPING</span>
+                                        <h3 class="partner-card__title">Eurosender</h3>
+                                    </div>
                                 </div>
-                                <h3 class="porto-substack-title">Subscribe to Porto Expats on Substack</h3>
-                                
-                                <p class="porto-substack-callout">
-                                    To receive weekly newsletters directly into your e-mail inbox you can subscribe us on Substack.
-                                </p>
-
-                                <form action="https://substack.com" target="_blank" method="get" class="porto-substack-form">
-                                    <input type="email" name="email" class="porto-substack-input" placeholder="Enter your email address..." required>
-                                    <button type="submit" class="porto-substack-btn">
-                                        <i class="fa-regular fa-paper-plane"></i> Subscribe on Substack
-                                    </button>
-                                </form>
-                            </div>
-
-                            <div class="porto-substack-trust">
-                                <span><i class="fa-solid fa-circle-check"></i> Delivered Thursdays</span>
-                                <span><i class="fa-solid fa-circle-check"></i> 100% Free</span>
-                                <span><i class="fa-solid fa-circle-check"></i> Unsubscribe Anytime</span>
+                                <div class="partner-card__offers">
+                                    <div class="partner-offer-box mb-2">
+                                        <span class="partner-offer-label">10% off all parcel services</span>
+                                        <div class="partner-coupon-bar">
+                                            <span class="partner-coupon-code">PORTOEXPATS</span>
+                                            <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS')">COPY</button>
+                                        </div>
+                                    </div>
+                                    <div class="partner-offer-box">
+                                        <span class="partner-offer-label">€15 off van services</span>
+                                        <div class="partner-coupon-bar">
+                                            <span class="partner-coupon-code">PORTOEXPATS_VAN</span>
+                                            <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS_VAN')">COPY</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                </div>
-            </div>
-        </section>
-
-        <!-- Sample Edition Preview -->
-        <section class="porto-preview-section">
-            <div class="container">
-                <div class="porto-preview-card">
-                    <div class="porto-preview-header">
-                        <div>
-                            <span class="porto-preview-tag"><i class="fa-regular fa-eye"></i> Sample Preview</span>
-                            <h3 class="mt-2">What a Typical Thursday Newsletter Looks Like</h3>
-                        </div>
-                        <a href="https://substack.com" target="_blank" class="porto-substack-btn" style="width: auto; padding: 10px 22px; font-size: 14px;">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Read Latest Issue
-                        </a>
-                    </div>
-
-                    <div class="row g-4">
-                        <div class="col-md-4">
-                            <div class="p-3 bg-light rounded-3 h-100">
-                                <h5 class="fw-bold text-dark mb-2"><i class="fa-solid fa-calendar-star text-danger me-2"></i> This Week in Porto</h5>
-                                <p class="text-muted fs-14 mb-0">Jazz sunset at Palácio de Cristal gardens + Serralves Autumn light festival opening this Friday night.</p>
+                    <!-- 3. Experience Trindade -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="culture">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (3).png" alt="Experience Trindade Logo" class="partner-card__logo">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">MUSEUM</span>
+                                    <h3 class="partner-card__title">Experience Trindade</h3>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="p-3 bg-light rounded-3 h-100">
-                                <h5 class="fw-bold text-dark mb-2"><i class="fa-solid fa-utensils text-warning me-2"></i> Culinary Spot of the Week</h5>
-                                <p class="text-muted fs-14 mb-0">Taberna dos Mercadores in Ribeira – unforgettable grilled octopus &amp; warm Portuguese hospitality.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="p-3 bg-light rounded-3 h-100">
-                                <h5 class="fw-bold text-dark mb-2"><i class="fa-solid fa-map-location-dot text-info me-2"></i> Recommended Day Trip</h5>
-                                <p class="text-muted fs-14 mb-0">Passadiços do Paiva &amp; 516 Arouca suspension bridge – a scenic 1-hour drive from Porto city center.</p>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">20% off tours</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS20</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS20')">COPY</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Portuguese Word of the Day Box -->
-                    <div class="porto-word-box">
-                        <h5><i class="fa-solid fa-comments me-2"></i> Portuguese Word of the Week:</h5>
-                        <div class="porto-word-highlight">Aconchegante <span class="fs-14 fw-normal text-muted">(ah-kohn-sheh-GAHN-teh)</span></div>
-                        <p><strong>Meaning:</strong> Cozy, warm, and welcoming. Example: <em>“Este café no Porto é muito aconchegante!”</em> (This café in Porto is very cozy!)</p>
+                    <!-- 4. Quinta de Villar d'Allen -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="culture food">
+                        <div class="partner-card">
+                            <div>
+                                <div class="partner-card__header">
+                                    <img src="../wp-content/uploads/2026/05/1 (4).png" alt="Quinta de Villar d'Allen Logo" class="partner-card__logo">
+                                    <div class="partner-card__meta">
+                                        <span class="partner-card__category">HISTORY · WINE TASTING</span>
+                                        <h3 class="partner-card__title">Quinta de Villar d'Allen</h3>
+                                    </div>
+                                </div>
+                                <div class="partner-card__offers">
+                                    <div class="partner-offer-box mb-2">
+                                        <span class="partner-offer-label">€2 off Garden &amp; House Experience</span>
+                                        <div class="partner-coupon-bar">
+                                            <span class="partner-coupon-code">PORTOEXPATS</span>
+                                            <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS')">COPY</button>
+                                        </div>
+                                    </div>
+                                    <div class="partner-offer-box">
+                                        <span class="partner-offer-label">€5 off Tawny &amp; Vintage Experience</span>
+                                        <div class="partner-coupon-bar">
+                                            <span class="partner-coupon-code">PORTOEXPATS</span>
+                                            <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS')">COPY</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- 5. Criatura -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="food">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (5).png" alt="Criatura Logo" class="partner-card__logo">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">ORGANIC INFUSIONS</span>
+                                    <h3 class="partner-card__title">Criatura</h3>
+                                </div>
+                            </div>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">10% off online shop</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS10</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS10')">COPY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6. Citrodora -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="beauty shopping">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (6).png" alt="Citrodora Logo" class="partner-card__logo">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">ORGANIC COSMETICS</span>
+                                    <h3 class="partner-card__title">Citrodora</h3>
+                                </div>
+                            </div>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">10% off</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS10</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS10')">COPY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7. Português às 3 -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="language">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (7).png" alt="Português às 3 Logo" class="partner-card__logo">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">LANGUAGE</span>
+                                    <h3 class="partner-card__title">Português às 3</h3>
+                                </div>
+                            </div>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">€5 off 1st individual class</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS_3</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS_3')">COPY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8. T P Tours Porto / Tuk Tuk -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="culture">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (8).png" alt="T P Tours Porto Logo" class="partner-card__logo">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">TRAVEL</span>
+                                    <h3 class="partner-card__title">T P Tours Porto / Tuk Tuk</h3>
+                                </div>
+                            </div>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">5% off</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS5</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS5')">COPY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 9. Teresa Rego Studio -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="culture shopping">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (9).png" alt="Teresa Rego Studio Logo" class="partner-card__logo">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">ART</span>
+                                    <h3 class="partner-card__title">Teresa Rego Studio</h3>
+                                </div>
+                            </div>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">15% off online shop</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS15</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS15')">COPY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 10. AR Porto Selfie Studio -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="shopping culture">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (10).png" alt="AR Porto Selfie Studio Logo" class="partner-card__logo">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">PHOTOGRAPHY</span>
+                                    <h3 class="partner-card__title">AR Porto Selfie Studio</h3>
+                                </div>
+                            </div>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">20% off + 30 extra minutes (until Aug 26)</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS')">COPY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 11. Presidencial Fado -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="culture">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (11).png" alt="Presidencial Fado Logo" class="partner-card__logo">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">MUSIC</span>
+                                    <h3 class="partner-card__title">Presidencial Fado</h3>
+                                </div>
+                            </div>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">€4 off</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS')">COPY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 12. Hotpod Yoga Porto -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="sport">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (12).png" alt="Hotpod Yoga Porto Logo" class="partner-card__logo">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">SPORT</span>
+                                    <h3 class="partner-card__title">Hotpod Yoga Porto</h3>
+                                </div>
+                            </div>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">25% off 1st class</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS25</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS25')">COPY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 13. Health & Breath -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="sport">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (13).png" alt="Health & Breath Logo" class="partner-card__logo">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">SPORT</span>
+                                    <h3 class="partner-card__title">Health &amp; Breath</h3>
+                                </div>
+                            </div>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">20% off</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS20</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS20')">COPY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 14. Beyond Studio Pilates -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="sport">
+                        <div class="partner-card">
+                            <div>
+                                <div class="partner-card__header">
+                                    <img src="../wp-content/uploads/2026/05/1 (14).png" alt="Beyond Studio Pilates Logo" class="partner-card__logo">
+                                    <div class="partner-card__meta">
+                                        <span class="partner-card__category">SPORT</span>
+                                        <h3 class="partner-card__title">Beyond Studio Pilates</h3>
+                                    </div>
+                                </div>
+                                <div class="partner-card__offers">
+                                    <div class="partner-offer-box mb-2">
+                                        <span class="partner-offer-label">Free 1st class</span>
+                                        <div class="partner-coupon-bar">
+                                            <span class="partner-coupon-code">PORTOEXPATS10</span>
+                                            <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS10')">COPY</button>
+                                        </div>
+                                    </div>
+                                    <div class="partner-offer-box">
+                                        <span class="partner-offer-label">10% off following classes</span>
+                                        <div class="partner-coupon-bar">
+                                            <span class="partner-coupon-code">PORTOEXPATS10</span>
+                                            <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS10')">COPY</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 15. Brizza -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="shopping">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (15).png" alt="Brizza Logo" class="partner-card__logo">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">CLOTHES</span>
+                                    <h3 class="partner-card__title">Brizza</h3>
+                                </div>
+                            </div>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">10% off</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS10</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS10')">COPY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 16. Check Cheburek -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="food">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (16).png" alt="Check Cheburek Logo" class="partner-card__logo">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">FOOD</span>
+                                    <h3 class="partner-card__title">Check Cheburek</h3>
+                                </div>
+                            </div>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">10% off</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS10</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS10')">COPY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 17. Eva Beauty Hub -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="beauty">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (1).webp" alt="Eva Beauty Hub Logo" class="partner-card__logo" onerror="this.src='../wp-content/uploads/2026/05/1 (1).png'">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">BEAUTY</span>
+                                    <h3 class="partner-card__title">Eva Beauty Hub</h3>
+                                </div>
+                            </div>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">10% off selected services**</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS')">COPY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 18. ESTÉTICA by Victoria -->
+                    <div class="col-12 col-md-6 col-lg-3 partner-item" data-category="beauty">
+                        <div class="partner-card">
+                            <div class="partner-card__header">
+                                <img src="../wp-content/uploads/2026/05/1 (6).png" alt="ESTÉTICA by Victoria Logo" class="partner-card__logo" onerror="this.src='../wp-content/uploads/2026/05/1 (1).png'">
+                                <div class="partner-card__meta">
+                                    <span class="partner-card__category">BEAUTY</span>
+                                    <h3 class="partner-card__title">ESTÉTICA by Victoria</h3>
+                                </div>
+                            </div>
+                            <div class="partner-card__offers">
+                                <div class="partner-offer-box">
+                                    <span class="partner-offer-label">15% off 1st treatment</span>
+                                    <div class="partner-coupon-bar">
+                                        <span class="partner-coupon-code">PORTOEXPATS15</span>
+                                        <button class="partner-copy-btn" onclick="copyCode(this, 'PORTOEXPATS15')">COPY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
     </main>
 
-    <!-- FOOTER JOIN US BANNER (Identical to Index & About) -->
+    <!-- FOOTER JOIN US BANNER (Identical to Index & About & Newsletter) -->
     <div class="footer-4__widget footer-subscribe-5 porto-footer-join">
         <div class="container custom-container">
             <div class="join-us-4__wrapper wow fadeInUp" data-wow-duration="0.7s" data-wow-delay="0.2s">
@@ -820,7 +1032,7 @@ html:root{
         </div>
     </div>
 
-    <!-- MAIN ELEMENTOR FOOTER (Identical to Index & About) -->
+    <!-- MAIN ELEMENTOR FOOTER (Identical to Index & About & Newsletter) -->
     <div data-elementor-type="wp-post" data-elementor-id="862" class="elementor elementor-862">
         <div class="elementor-element elementor-element-6342ca7 e-con-full e-flex e-con e-parent" data-id="6342ca7" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
             <div class="elementor-element elementor-element-fd7e00c e-flex e-con-boxed e-con e-child" data-id="fd7e00c" data-element_type="container" data-e-type="container">
@@ -878,7 +1090,7 @@ html:root{
                                         <li class="elementor-icon-list-item"><a href="../contact/index.html"><span class="elementor-icon-list-icon"><svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg></span><span class="elementor-icon-list-text">Living in Porto</span></a></li>
                                         <li class="elementor-icon-list-item"><a href="../news/index.html"><span class="elementor-icon-list-icon"><svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg></span><span class="elementor-icon-list-text">Portuguese Word of the Day</span></a></li>
                                         <li class="elementor-icon-list-item"><a href="newsletter.html"><span class="elementor-icon-list-icon"><svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg></span><span class="elementor-icon-list-text">Weekly Newsletter</span></a></li>
-                                        <li class="elementor-icon-list-item"><a href="../news/index.html"><span class="elementor-icon-list-icon"><svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg></span><span class="elementor-icon-list-text">Partnerships</span></a></li>
+                                        <li class="elementor-icon-list-item"><a href="partnerships.html"><span class="elementor-icon-list-icon"><svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg></span><span class="elementor-icon-list-text">Partnerships</span></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1037,5 +1249,45 @@ html:root{
     <!-- Scripts -->
     <script type="text/javascript" src="../wp-content/themes/ebuzz/assets/js/bootstrap.bundle.min_ver=6.9.5.js"></script>
     <script type="text/javascript" src="../wp-content/themes/ebuzz/assets/js/backToTop_ver=6.9.5.js"></script>
+    
+    <!-- Filter & Copy JavaScript -->
+    <script>
+    function copyCode(btn, code) {
+        navigator.clipboard.writeText(code).then(() => {
+            const originalText = btn.innerText;
+            btn.innerText = 'COPIED!';
+            btn.classList.add('copied');
+            setTimeout(() => {
+                btn.innerText = originalText;
+                btn.classList.remove('copied');
+            }, 2000);
+        }).catch(err => {
+            console.error('Failed to copy: ', err);
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const filterBtns = document.querySelectorAll('.porto-filter-btn');
+        const partnerItems = document.querySelectorAll('.partner-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                partnerItems.forEach(item => {
+                    const categories = item.getAttribute('data-category');
+                    if (filterValue === 'all' || categories.includes(filterValue)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    });
+    </script>
 </body>
 </html>
