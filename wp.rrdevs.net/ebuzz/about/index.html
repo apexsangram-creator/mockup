@@ -2,7 +2,7 @@
     <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
-    <title>Porto Expats</title>
+    <title>About Porto Expats</title>
 <meta name="robots" content="noindex, nofollow">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="alternate" type="application/rss+xml" title="ebuzz » Feed" href="https://wp.rrdevs.net/ebuzz/feed/">
@@ -322,7 +322,7 @@ background: #F3F4F6 !important;
     border-radius: 15px;
     box-shadow: 0 8px 22px rgba(76, 35, 111, 0.45);
     color: #fff;
-    content: "\f16d";
+    content: "\\f16d";
     display: flex;
     font-family: "Font Awesome 6 Brands";
     font-size: 27px;
@@ -430,311 +430,6 @@ background: #F3F4F6 !important;
     display: block;
     margin: 34px auto 0 !important;
 }
-/* Categories Section before Insta World */
-.porto-categories-section {
-    padding: 75px 0 70px;
-    background: #ffffff;
-    border-top: 1px solid rgba(0, 0, 0, 0.06);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-    position: relative;
-    z-index: 5;
-}
-.porto-cat-header {
-    text-align: center;
-    margin-bottom: 48px;
-}
-.porto-cat-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: #FEF2F2;
-    color: #E70820;
-    font-size: 13px;
-    font-weight: 700;
-    padding: 6px 20px;
-    border-radius: 999px;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-    border: 1px solid rgba(231, 8, 32, 0.15);
-}
-.porto-cat-title {
-    font-family: 'Poppins', sans-serif;
-    font-size: clamp(28px, 4vw, 38px);
-    font-weight: 800;
-    color: #0F172A;
-    margin: 0;
-}
-.porto-cat-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 36px 30px;
-    max-width: 1280px;
-    margin: 0 auto;
-}
-.porto-cat-item {
-    width: 110px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.porto-cat-item:hover {
-    transform: translateY(-8px);
-}
-.porto-cat-icon-circle {
-    width: 78px;
-    height: 78px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 28px;
-    color: #ffffff;
-    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.09);
-    transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.porto-cat-item:hover .porto-cat-icon-circle {
-    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.22);
-    transform: scale(1.08);
-}
-.porto-cat-name {
-    margin-top: 14px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    color: #334155;
-    text-align: center;
-    transition: color 0.2s ease;
-    line-height: 1.2;
-}
-.porto-cat-item:hover .porto-cat-name {
-    color: #E70820;
-}
-
-/* Custom Icon Micro-Animations on Hover */
-.porto-cat-icon-circle i {
-    display: inline-block;
-    transition: transform 0.25s ease;
-}
-
-/* Sport (Running) */
-.porto-cat-item:hover .fa-person-running {
-    animation: cat-run 0.45s infinite alternate ease-in-out;
-}
-@keyframes cat-run {
-    0% { transform: translateX(-3px) rotate(-12deg); }
-    100% { transform: translateX(5px) rotate(15deg) translateY(-2px); }
-}
-
-/* Art (Palette Painting Wiggle) */
-.porto-cat-item:hover .fa-palette {
-    animation: cat-palette 0.7s infinite alternate ease-in-out;
-}
-@keyframes cat-palette {
-    0% { transform: rotate(-20deg) scale(1.1); }
-    100% { transform: rotate(20deg) scale(1.15); }
-}
-
-/* Bars & Drinks (Cheering Toast) */
-.porto-cat-item:hover .fa-martini-glass-citrus,
-.porto-cat-item:hover .fa-glass-water {
-    animation: cat-cheers 0.5s infinite alternate ease-in-out;
-}
-@keyframes cat-cheers {
-    0% { transform: rotate(-15deg) scale(1.05); }
-    100% { transform: rotate(22deg) scale(1.25); }
-}
-
-/* Beaches (Umbrella Sway) */
-.porto-cat-item:hover .fa-umbrella-beach {
-    animation: cat-sway 0.8s infinite alternate ease-in-out;
-}
-@keyframes cat-sway {
-    0% { transform: rotate(-14deg); }
-    100% { transform: rotate(14deg) translateY(-3px); }
-}
-
-/* Cafes (Hot Coffee Steam Bounce) */
-.porto-cat-item:hover .fa-mug-hot {
-    animation: cat-steam 0.6s infinite alternate ease-in-out;
-}
-@keyframes cat-steam {
-    0% { transform: translateY(0) scale(1); }
-    100% { transform: translateY(-5px) scale(1.15); }
-}
-
-/* Education (Graduation Cap Toss) */
-.porto-cat-item:hover .fa-graduation-cap {
-    animation: cat-toss 0.6s infinite alternate ease-in-out;
-}
-@keyframes cat-toss {
-    0% { transform: translateY(0) rotate(0); }
-    100% { transform: translateY(-7px) rotate(-12deg) scale(1.15); }
-}
-
-/* Finance (Wallet Jingle) */
-.porto-cat-item:hover .fa-wallet {
-    animation: cat-jingle 0.35s infinite alternate ease-in-out;
-}
-@keyframes cat-jingle {
-    0% { transform: rotate(-12deg) scale(1.1); }
-    100% { transform: rotate(12deg) scale(1.1); }
-}
-
-/* Food & Restaurants (Utensils Action) */
-.porto-cat-item:hover .fa-utensils,
-.porto-cat-item:hover .fa-plate-wheat {
-    animation: cat-eat 0.5s infinite alternate ease-in-out;
-}
-@keyframes cat-eat {
-    0% { transform: scale(1) rotate(-8deg); }
-    100% { transform: scale(1.2) rotate(8deg); }
-}
-
-/* Kids (Happy Jumping) */
-.porto-cat-item:hover .fa-child {
-    animation: cat-jump 0.4s infinite alternate ease-in-out;
-}
-@keyframes cat-jump {
-    0% { transform: translateY(0) scale(1); }
-    100% { transform: translateY(-8px) scale(1.2); }
-}
-
-/* Language (Speech Flip) */
-.porto-cat-item:hover .fa-language {
-    animation: cat-flip 0.7s infinite alternate ease-in-out;
-}
-@keyframes cat-flip {
-    0% { transform: scale(1) rotate(-10deg); }
-    100% { transform: scale(1.2) rotate(10deg); }
-}
-
-/* Music (Beat Pulse & Wiggle) */
-.porto-cat-item:hover .fa-music {
-    animation: cat-music 0.4s infinite alternate ease-in-out;
-}
-@keyframes cat-music {
-    0% { transform: scale(1) rotate(-12deg); }
-    100% { transform: scale(1.3) rotate(14deg); }
-}
-
-/* Pastries (Bite Pulse) */
-.porto-cat-item:hover .fa-cookie-bite {
-    animation: cat-munch 0.5s infinite alternate ease-in-out;
-}
-@keyframes cat-munch {
-    0% { transform: rotate(0) scale(1); }
-    100% { transform: rotate(-15deg) scale(1.2); }
-}
-
-/* Pets (Paw Walking) */
-.porto-cat-item:hover .fa-paw {
-    animation: cat-paw 0.45s infinite alternate ease-in-out;
-}
-@keyframes cat-paw {
-    0% { transform: rotate(-15deg) scale(1); }
-    100% { transform: rotate(15deg) scale(1.2) translateY(-3px); }
-}
-
-/* Places (Pin Bouncing) */
-.porto-cat-item:hover .fa-location-dot {
-    animation: cat-pin 0.5s infinite alternate ease-in-out;
-}
-@keyframes cat-pin {
-    0% { transform: translateY(0) scale(1); }
-    100% { transform: translateY(-7px) scale(1.2); }
-}
-
-/* Rooftop ( Skyline Rising) */
-.porto-cat-item:hover .fa-building {
-    animation: cat-rise 0.6s infinite alternate ease-in-out;
-}
-@keyframes cat-rise {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-5px) scale(1.12); }
-}
-
-/* Services (Ringing Bell) */
-.porto-cat-item:hover .fa-concierge-bell {
-    animation: cat-ring 0.3s infinite alternate ease-in-out;
-}
-@keyframes cat-ring {
-    0% { transform: rotate(-18deg); }
-    100% { transform: rotate(18deg); }
-}
-
-/* Traditions & Wine (Pouring Wine) */
-.porto-cat-item:hover .fa-wine-glass,
-.porto-cat-item:hover .fa-wine-bottle {
-    animation: cat-pour 0.6s infinite alternate ease-in-out;
-}
-@keyframes cat-pour {
-    0% { transform: rotate(0) scale(1); }
-    100% { transform: rotate(-28deg) translateY(-2px) scale(1.15); }
-}
-
-/* Trips (Moving Route) */
-.porto-cat-item:hover .fa-route {
-    animation: cat-travel 0.6s infinite alternate ease-in-out;
-}
-@keyframes cat-travel {
-    0% { transform: translateX(-3px) scale(1); }
-    100% { transform: translateX(4px) scale(1.18); }
-}
-
-/* Vegetarian (Fluttering Leaf) */
-.porto-cat-item:hover .fa-leaf {
-    animation: cat-leaf 0.65s infinite alternate ease-in-out;
-}
-@keyframes cat-leaf {
-    0% { transform: rotate(-15deg) scale(1); }
-    100% { transform: rotate(25deg) scale(1.2); }
-}
-
-/* Work (Briefcase Lift) */
-.porto-cat-item:hover .fa-briefcase {
-    animation: cat-work 0.5s infinite alternate ease-in-out;
-}
-@keyframes cat-work {
-    0% { transform: translateY(0) rotate(0); }
-    100% { transform: translateY(-5px) rotate(8deg) scale(1.12); }
-}
-@media (max-width: 768px) {
-    .porto-cat-grid {
-        gap: 28px 18px;
-    }
-    .porto-cat-item {
-        width: 95px;
-    }
-    .porto-cat-icon-circle {
-        width: 66px;
-        height: 66px;
-        font-size: 24px;
-    }
-    .porto-cat-name {
-        font-size: 13px;
-    }
-}
-@media (max-width: 480px) {
-    .porto-cat-grid {
-        gap: 22px 12px;
-    }
-    .porto-cat-item {
-        width: 85px;
-    }
-    .porto-cat-icon-circle {
-        width: 58px;
-        height: 58px;
-        font-size: 20px;
-    }
-    .porto-cat-name {
-        font-size: 12px;
-    }
-}
-
 /* Popular Posts activity filters. */
 .porto-popular-posts .latest-piblished__play {
     display: none;
@@ -1151,31 +846,11 @@ background: #F3F4F6 !important;
 .porto-hero .new-post-3__title a {
     color: var(--white);
 }
-.porto-hero .new-post-3__title,
-.porto-shimmer-title {
-    font-family: 'Poppins', sans-serif !important;
-    font-size: clamp(36px, 5vw, 54px) !important;
-    font-weight: 800 !important;
-    line-height: 1.1 !important;
-    margin-bottom: 12px !important;
-    background: linear-gradient(90deg, #FFFFFF 0%, #ECFF70 25%, #FFFFFF 50%, #FF5722 75%, #FFFFFF 100%) !important;
-    background-size: 200% auto !important;
-    color: transparent !important;
-    -webkit-background-clip: text !important;
-    background-clip: text !important;
-    animation: porto-shimmer 3s linear infinite !important;
-    display: inline-block !important;
-}
-@keyframes porto-shimmer {
-    0% { background-position: 0% center; }
-    100% { background-position: 200% center; }
-}
-.porto-hero-subtitle {
-    font-size: clamp(16px, 2vw, 20px) !important;
-    color: rgba(255, 255, 255, 0.95) !important;
-    font-weight: 500 !important;
-    letter-spacing: 0.2px !important;
-    margin: 0 !important;
+.porto-hero .new-post-3__title {
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(28px, 3vw, 42px);
+    line-height: 1.16;
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.32);
 }
 .porto-hero .new-post-3__dec {
     font-size: 16px;
@@ -1223,226 +898,6 @@ background: #F3F4F6 !important;
     .porto-footer-join { padding: 24px 15px 0; }
     .porto-footer-join .join-us-4__wrapper { padding: 26px 22px; }
 }
-/* Wavy Flowing Tinted Glassmorphism Main Footer Background */
-.elementor-862 .elementor-element.elementor-element-6342ca7:not(.elementor-motion-effects-element-type-background),
-.elementor-862 .elementor-element.elementor-element-42609a8:not(.elementor-motion-effects-element-type-background) {
-    background: linear-gradient(135deg, #0b1120 0%, #151a33 40%, #0d1b2a 100%) !important;
-    position: relative !important;
-    isolation: isolate !important;
-    overflow: hidden !important;
-}
-
-/* Frosted Ambient Tint & Wavy SVG Flowing Backdrop for Main Footer */
-.elementor-862 .elementor-element.elementor-element-6342ca7::before,
-.elementor-862 .elementor-element.elementor-element-42609a8::before {
-    content: "" !important;
-    position: absolute !important;
-    inset: 0 !important;
-    background-image: 
-        radial-gradient(circle at 10% 20%, rgba(231, 8, 32, 0.35) 0%, transparent 45%),
-        radial-gradient(circle at 90% 75%, rgba(6, 147, 227, 0.35) 0%, transparent 45%),
-        radial-gradient(circle at 50% 100%, rgba(155, 81, 224, 0.25) 0%, transparent 50%),
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='0.06' d='M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,138.7C672,139,768,181,864,197.3C960,213,1056,203,1152,176C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E") !important;
-    background-size: cover, cover, cover, cover !important;
-    background-position: center !important;
-    backdrop-filter: blur(16px) saturate(180%) !important;
-    -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
-    z-index: -1 !important;
-    pointer-events: none !important;
-}
-
-/* Distinct Deep Midnight Onyx & Crimson Glow Copyright Bar */
-.elementor-862 .elementor-element.elementor-element-0b811c6:not(.elementor-motion-effects-element-type-background) {
-    background: linear-gradient(135deg, #070A10 0%, #0F172A 50%, #06080E 100%) !important;
-    border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
-    position: relative !important;
-    isolation: isolate !important;
-    overflow: hidden !important;
-}
-.elementor-862 .elementor-element.elementor-element-0b811c6::before {
-    content: "" !important;
-    position: absolute !important;
-    inset: 0 !important;
-    background: radial-gradient(circle at 30% 0%, rgba(231, 8, 32, 0.22) 0%, transparent 65%),
-                radial-gradient(circle at 80% 100%, rgba(6, 147, 227, 0.18) 0%, transparent 65%) !important;
-    pointer-events: none !important;
-    z-index: 0 !important;
-}
-.elementor-862 .elementor-element.elementor-element-0b811c6 .e-con-inner {
-    position: relative !important;
-    z-index: 1 !important;
-}
-.elementor-element-7b3dd6c span {
-    color: #FDE68A !important;
-    font-weight: 500 !important;
-}
-
-/* Glass highlights and dividers */
-.elementor-862 .elementor-element.elementor-element-6342ca7 {
-    border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
-    box-shadow: 0 -15px 40px rgba(0, 0, 0, 0.25) !important;
-}
-.elementor-862 .elementor-element.elementor-element-42609a8 {
-    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
-}
-
-/* Footer Office Info Column Hover Micro-Animations */
-.elementor-element-42609a8 .elementor-icon {
-    transition: transform 0.25s ease !important;
-}
-.elementor-element-42609a8 .elementor-icon i {
-    display: inline-block !important;
-    transition: transform 0.25s ease !important;
-}
-
-/* 1. Phone Ringing Shake */
-.elementor-element-af5a0e6:hover .elementor-icon i,
-.elementor-element-af5a0e6:hover .elementor-icon {
-    animation: ft-phone-ring 0.35s infinite alternate ease-in-out !important;
-}
-@keyframes ft-phone-ring {
-    0% { transform: rotate(-18deg) scale(1.18); }
-    100% { transform: rotate(18deg) scale(1.18); }
-}
-
-/* 2. Email Envelope Bounce */
-.elementor-element-127dc14:hover .elementor-icon i,
-.elementor-element-127dc14:hover .elementor-icon {
-    animation: ft-envelope-bounce 0.5s infinite alternate ease-in-out !important;
-}
-@keyframes ft-envelope-bounce {
-    0% { transform: translateY(0) scale(1.05); }
-    100% { transform: translateY(-7px) scale(1.2); }
-}
-
-/* 3. Office Pin Bouncing Drop */
-.elementor-element-6649822:hover .elementor-icon i,
-.elementor-element-6649822:hover .elementor-icon {
-    animation: ft-pin-drop 0.45s infinite alternate ease-in-out !important;
-}
-@keyframes ft-pin-drop {
-    0% { transform: translateY(0) scale(1); }
-    100% { transform: translateY(-8px) scale(1.22); }
-}
-
-/* 4. Clock Tick-Tock Wiggle */
-.elementor-element-75fca39:hover .elementor-icon i,
-.elementor-element-75fca39:hover .elementor-icon {
-    animation: ft-clock-tick 0.55s infinite alternate ease-in-out !important;
-}
-@keyframes ft-clock-tick {
-    0% { transform: rotate(-25deg) scale(1.1); }
-    100% { transform: rotate(25deg) scale(1.2); }
-}
-
-/* Sleek, Elegant & Vibrant Footer Subscribe Form */
-.footer-4__widget.footer-subscribe-2 .footer-2__title {
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px !important;
-    font-weight: 700 !important;
-    color: #ffffff !important;
-    letter-spacing: 0.5px !important;
-    text-transform: uppercase !important;
-    margin-bottom: 14px !important;
-}
-.footer-4__subscribe {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.footer-4__subscribe-input {
-    width: 100%;
-}
-.footer-4__subscribe-input input {
-    width: 100% !important;
-    height: 44px !important;
-    background: rgba(255, 255, 255, 0.08) !important;
-    border: 1px solid rgba(255, 255, 255, 0.18) !important;
-    border-radius: 10px !important;
-    padding: 0 16px !important;
-    color: #ffffff !important;
-    font-size: 13.5px !important;
-    outline: none !important;
-    transition: all 0.25s ease !important;
-}
-.footer-4__subscribe-input input::placeholder {
-    color: rgba(255, 255, 255, 0.55) !important;
-}
-.footer-4__subscribe-input input:focus {
-    border-color: #FF5722 !important;
-    background: rgba(255, 255, 255, 0.14) !important;
-    box-shadow: 0 0 0 3px rgba(255, 87, 34, 0.2) !important;
-}
-.footer-4__subscribe-btn {
-    width: 100%;
-}
-.footer-4__subscribe-btn button,
-.footer-4__subscribe-btn .rr-btn {
-    width: 100% !important;
-    height: 44px !important;
-    line-height: 44px !important;
-    background: linear-gradient(135deg, #E70820 0%, #FF5722 100%) !important;
-    border: none !important;
-    border-radius: 10px !important;
-    color: #ffffff !important;
-    font-family: 'Poppins', sans-serif !important;
-    font-size: 13.5px !important;
-    font-weight: 700 !important;
-    letter-spacing: 0.3px !important;
-    cursor: pointer !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    padding: 0 20px !important;
-    transition: all 0.25s ease !important;
-    box-shadow: 0 4px 14px rgba(231, 8, 32, 0.25) !important;
-}
-.footer-4__subscribe-btn button:hover,
-.footer-4__subscribe-btn .rr-btn:hover {
-    transform: translateY(-2px) !important;
-    box-shadow: 0 8px 22px rgba(231, 8, 32, 0.4) !important;
-    background: linear-gradient(135deg, #C2061A 0%, #E54C19 100%) !important;
-}
-.footer-4__subscribe-dec {
-    font-size: 12px !important;
-    color: rgba(255, 255, 255, 0.55) !important;
-    line-height: 1.4 !important;
-    margin-top: 2px !important;
-}
-.footer-4__subscribe-dec a {
-    color: rgba(255, 255, 255, 0.85) !important;
-    text-decoration: underline !important;
-}
-.footer-4__subscribe-dec a:hover {
-    color: #FF5722 !important;
-}
-
-/* Ensure floating back-to-top button does not overlap footer copyright links */
-.progress-wrap {
-    bottom: 25px !important;
-    right: 25px !important;
-    z-index: 9999 !important;
-}
-.elementor-element-40cafe5,
-.elementor-element-fa662f8,
-.elementor-element-fa662f8 .elementor-icon-list-items.elementor-inline-items {
-    padding-right: 85px !important;
-}
-@media (max-width: 768px) {
-    .elementor-element-0b811c6 {
-        padding-bottom: 75px !important;
-    }
-    .elementor-element-40cafe5,
-    .elementor-element-fa662f8,
-    .elementor-element-fa662f8 .elementor-icon-list-items.elementor-inline-items {
-        padding-right: 0 !important;
-    }
-    .progress-wrap {
-        bottom: 20px !important;
-        right: 20px !important;
-    }
-}
 @media (max-width: 767px) {
     .porto-hero {
         min-height: 530px;
@@ -1450,6 +905,66 @@ background: #F3F4F6 !important;
     }
     .porto-hero .banner-section__content {
         padding: 26px 24px 18px;
+    }
+}
+.porto-about-shell {
+    background: linear-gradient(135deg, #f8efe7 0%, #fdf8f2 100%);
+    padding: 72px 0 88px;
+}
+.porto-about-page {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(17, 24, 39, 0.08);
+    border-radius: 24px;
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 48px 40px;
+}
+.porto-about-page .porto-about-kicker {
+    color: #d84b60;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.24em;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+.porto-about-page h1 {
+    color: #111827;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(32px, 3vw, 46px);
+    line-height: 1.16;
+    margin-bottom: 20px;
+}
+.porto-about-page p,
+.porto-about-page li {
+    color: #374151;
+    font-size: 17px;
+    line-height: 1.8;
+}
+.porto-about-page ul {
+    margin: 16px 0 0 22px;
+    padding: 0;
+}
+.porto-about-page strong {
+    color: #111827;
+}
+.porto-about-page .porto-about-cta {
+    color: #111827;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 24px;
+}
+@media (max-width: 767px) {
+    .porto-about-shell {
+        padding: 40px 0 56px;
+    }
+    .porto-about-page {
+        padding: 32px 22px;
+    }
+    .porto-about-page p,
+    .porto-about-page li {
+        font-size: 16px;
     }
 }		</style>
 		<style id="kirki-inline-styles">.progress-wrap::after{background:#DC2626;color:#ffffff;}.sk-three-bounce{background:rgba(0, 0, 0);}.sk-three-bounce .sk-child{background:rgba(255, 255, 255);}.breadcrumb-section__area .breadcrumb-section__content .breadcrumb-section__title{color:#0f0f0f;}.breadcrumb-section__area.grey-bg{background:#ffffff;background-color:#ffffff;}@media (max-width: 767px){.breadcrumb-section__content{padding-top:37px;padding-bottom:37px;}}@media (min-width: 768px) and (max-width: 1023px){.breadcrumb-section__content{padding-top:37px;padding-bottom:37px;}}@media (min-width: 1024px){.breadcrumb-section__content{padding-top:52px;padding-bottom:52px;}}</style></head>
@@ -1624,9 +1139,8 @@ background: #F3F4F6 !important;
 	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-7041" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7041 nav-item"><a title="Modern Blog" href="../modern-blog/index.html" class="dropdown-items">Modern Blog</a></li>
 </ul>
 </li>
-<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2251" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2251 nav-item"><a title="About" href="about.html" class="nav-links">About</a></li>
-<li class="menu-item nav-item"><a title="Newsletter" href="newsletter.html" class="nav-links">Newsletter</a></li>
-<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-7605" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7605 nav-item"><a title="Partnerships" href="partnerships.html" class="nav-links">Partnerships</a>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2251" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2251 nav-item"><a title="About" href="../about/index.html" class="nav-links">About</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-7605" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7605 nav-item"><a title="Partnerships" href="../news/index.html" class="nav-links">Partnerships</a>
 <ul class="tp-submenu sub-menu" role="menu">
 	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-7606" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7606 nav-item"><a title="News" href="../news/index.html" class="dropdown-items">News</a></li>
 	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-7604" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7604 nav-item"><a title="News 2" href="../news-2/index.html" class="dropdown-items">News 2</a></li>
@@ -1642,7 +1156,7 @@ background: #F3F4F6 !important;
 	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2788" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2788 nav-item"><a title="404" href="../404/index.html" class="dropdown-items">404</a></li>
 </ul>
 </li>
-<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2254" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2254 nav-item"><a title="Contact" href="contact.html" class="nav-links">Contact</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2254" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2254 nav-item"><a title="Contact" href="../contact/index.html" class="nav-links">Contact</a></li>
 </ul>                                    </nav>
                                 </div>
                             </div>
@@ -1777,44 +1291,24 @@ background: #F3F4F6 !important;
     <div id="smooth-wrapper">
         <div id="smooth-content">
             		<div data-elementor-type="wp-page" data-elementor-id="4705" class="elementor elementor-4705">
-				<div class="elementor-element elementor-element-c9aaed8 e-con-full e-flex e-con e-parent" data-id="c9aaed8" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-				<div class="elementor-element elementor-element-d0b921c elementor-widget elementor-widget-ebuzz_blog_post" data-id="d0b921c" data-element_type="widget" data-e-type="widget" data-widget_type="ebuzz_blog_post.default">
-				<div class="elementor-widget-container">
-					
-        
-            
-            <!-- banner-section -->
-            <section class="banner-section__area">
-
-                                                                    <div class="post-bg banner-section__wrapper porto-hero" data-background="../wp-content/uploads/2026/03/head.webp">
-                                <div class="container custom-container">
-                                    <div class="row">
-                                        <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-8">
-
-                                            <div class="banner-section__item wow fadeInUp" data-wow-duration="0.7s" data-wow-delay="0.2s">
-                                                <div class="banner-section__content">
-                                                    <div class="new-post-3__info">
-                                                        <h1 class="new-post-3__title porto-shimmer-title">
-                                                             Porto Expats
-                                                         </h1>
-
-                                                         <p class="new-post-3__dec custom_description porto-hero-subtitle">
-                                                             Connecting expats with locals
-                                                         </p>
-                                                        
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                                                    </section>
-
-        
-				</div>
-				</div>
+				<div class="elementor-element elementor-element-3c4df52 porto-about-shell e-con-full e-flex e-con e-parent" data-id="3c4df52" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+						<section class="porto-about-page">
+							<p class="porto-about-kicker">About PortoExpats.pt</p>
+							<h1>Olá and welcome to PortoExpats.pt!</h1>
+							<p>My name is Gabriela, and like many of you, I fell in love with Porto – a city that has truly captured my heart. I’m originally from Slovakia, and my journey with Porto began on May 30, 2013. Some say 13 is an unlucky number, but for me, it marked the beginning of something beautiful. It was the year I landed at Francisco Sá Carneiro Airport for the first time – to visit someone special I met during Erasmus. That love story continues to this day… and so does my love for Porto.</p>
+							<p>Since then, I’ve lived in Porto (with a few breaks) for over 5 years. I got married here and slowly gathered a wealth of knowledge – not just about the city, but about its food, people, language, traditions, local products, and how to truly enjoy life here.</p>
+							<p>People often ask me: “Do you feel more like an expat or a local?” Honestly, I feel a bit 😊 (or rather a lot) of both. And that’s exactly why I created this space – to connect expats with locals, and help both communities learn from, respect and support one another.</p>
+							<p>This page is for everyone:</p>
+							<ul>
+								<li>living in Porto as an expat or a local,</li>
+								<li>planning to move here,</li>
+								<li>visiting for a few days,</li>
+								<li>or just dreaming about coming one day…</li>
+							</ul>
+							<p class="porto-about-cta">You’re welcome here. <strong>Bem-vindo!</strong> ❤️</p>
+						</section>
+					</div>
 				</div>
 		<div class="elementor-element elementor-element-4145bf4 porto-latest-updates e-flex e-con-boxed e-con e-parent" data-id="4145bf4" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
@@ -3543,179 +3037,6 @@ By pressing the subscribe button you agree to our
 				<div class="elementor-widget-container">
 					
         
-            <!-- Categories Section -->
-            <section class="porto-categories-section" id="explore-categories">
-                <div class="container custom-container">
-                    <div class="porto-cat-header">
-                        <span class="porto-cat-badge"><i class="fa-solid fa-layer-group"></i> Porto Directory</span>
-                        <h2 class="porto-cat-title">Explore by Category</h2>
-                    </div>
-
-                    <div class="porto-cat-grid">
-                        <a href="index.html#art" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #EC4899 0%, #8B5CF6 100%);">
-                                <i class="fa-solid fa-palette"></i>
-                            </div>
-                            <span class="porto-cat-name">Art</span>
-                        </a>
-
-                        <a href="index.html#bars" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);">
-                                <i class="fa-solid fa-martini-glass-citrus"></i>
-                            </div>
-                            <span class="porto-cat-name">Bars</span>
-                        </a>
-
-                        <a href="index.html#beaches" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #06B6D4 0%, #0284C7 100%);">
-                                <i class="fa-solid fa-umbrella-beach"></i>
-                            </div>
-                            <span class="porto-cat-name">Beaches</span>
-                        </a>
-
-                        <a href="index.html#cafes" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #84CC16 0%, #16A34A 100%);">
-                                <i class="fa-solid fa-mug-hot"></i>
-                            </div>
-                            <span class="porto-cat-name">Cafes</span>
-                        </a>
-
-                        <a href="index.html#drinks" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #EF4444 0%, #F97316 100%);">
-                                <i class="fa-solid fa-glass-water"></i>
-                            </div>
-                            <span class="porto-cat-name">Drinks</span>
-                        </a>
-
-                        <a href="index.html#education" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #6366F1 0%, #4F46E5 100%);">
-                                <i class="fa-solid fa-graduation-cap"></i>
-                            </div>
-                            <span class="porto-cat-name">Education</span>
-                        </a>
-
-                        <a href="index.html#finance" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #10B981 0%, #059669 100%);">
-                                <i class="fa-solid fa-wallet"></i>
-                            </div>
-                            <span class="porto-cat-name">Finance</span>
-                        </a>
-
-                        <a href="index.html#food" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #E70820 0%, #DC2626 100%);">
-                                <i class="fa-solid fa-utensils"></i>
-                            </div>
-                            <span class="porto-cat-name">Food</span>
-                        </a>
-
-                        <a href="index.html#kids" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #F43F5E 0%, #FB7185 100%);">
-                                <i class="fa-solid fa-child"></i>
-                            </div>
-                            <span class="porto-cat-name">Kids</span>
-                        </a>
-
-                        <a href="index.html#language" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%);">
-                                <i class="fa-solid fa-language"></i>
-                            </div>
-                            <span class="porto-cat-name">Language</span>
-                        </a>
-
-                        <a href="index.html#music" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #A855F7 0%, #7E22CE 100%);">
-                                <i class="fa-solid fa-music"></i>
-                            </div>
-                            <span class="porto-cat-name">Music</span>
-                        </a>
-
-                        <a href="index.html#pastries" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #F59E0B 0%, #B45309 100%);">
-                                <i class="fa-solid fa-cookie-bite"></i>
-                            </div>
-                            <span class="porto-cat-name">Pastries</span>
-                        </a>
-
-                        <a href="index.html#pets" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #14B8A6 0%, #0D9488 100%);">
-                                <i class="fa-solid fa-paw"></i>
-                            </div>
-                            <span class="porto-cat-name">Pets</span>
-                        </a>
-
-                        <a href="index.html#places" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #0EA5E9 0%, #0369A1 100%);">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-                            <span class="porto-cat-name">Places</span>
-                        </a>
-
-                        <a href="index.html#restaurants" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #E11D48 0%, #9F1239 100%);">
-                                <i class="fa-solid fa-plate-wheat"></i>
-                            </div>
-                            <span class="porto-cat-name">Restaurants</span>
-                        </a>
-
-                        <a href="index.html#rooftop" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #64748B 0%, #334155 100%);">
-                                <i class="fa-solid fa-building"></i>
-                            </div>
-                            <span class="porto-cat-name">Rooftop</span>
-                        </a>
-
-                        <a href="index.html#services" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #6366F1 0%, #4338CA 100%);">
-                                <i class="fa-solid fa-concierge-bell"></i>
-                            </div>
-                            <span class="porto-cat-name">Services</span>
-                        </a>
-
-                        <a href="index.html#sport" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #10B981 0%, #047857 100%);">
-                                <i class="fa-solid fa-person-running"></i>
-                            </div>
-                            <span class="porto-cat-name">Sport</span>
-                        </a>
-
-                        <a href="index.html#traditions" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #D97706 0%, #B45309 100%);">
-                                <i class="fa-solid fa-wine-glass"></i>
-                            </div>
-                            <span class="porto-cat-name">Traditions</span>
-                        </a>
-
-                        <a href="index.html#trips" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #0284C7 0%, #1E3A8A 100%);">
-                                <i class="fa-solid fa-route"></i>
-                            </div>
-                            <span class="porto-cat-name">Trips</span>
-                        </a>
-
-                        <a href="index.html#vegetarian" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #22C55E 0%, #15803D 100%);">
-                                <i class="fa-solid fa-leaf"></i>
-                            </div>
-                            <span class="porto-cat-name">Vegetarian</span>
-                        </a>
-
-                        <a href="index.html#wine" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #881337 0%, #4C0519 100%);">
-                                <i class="fa-solid fa-wine-bottle"></i>
-                            </div>
-                            <span class="porto-cat-name">Wine</span>
-                        </a>
-
-                        <a href="index.html#work" class="porto-cat-item">
-                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #475569 0%, #0F172A 100%);">
-                                <i class="fa-solid fa-briefcase"></i>
-                            </div>
-                            <span class="porto-cat-name">Work</span>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
             <!-- latest-updates -->
             <section class="latest-updates-3__area grey-bg section-space-bottom porto-insta-world">
                 <div class="container custom-container">
@@ -4285,7 +3606,7 @@ By pressing the subscribe button you agree to our
 											</a>
 									</li>
 								<li class="elementor-icon-list-item">
-											<a href="newsletter.html">
+											<a href="../contact/index.html">
 
 												<span class="elementor-icon-list-icon">
 							<svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>						</span>
