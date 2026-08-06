@@ -430,6 +430,122 @@ background: #F3F4F6 !important;
     display: block;
     margin: 34px auto 0 !important;
 }
+/* Categories Section before Insta World */
+.porto-categories-section {
+    padding: 75px 0 70px;
+    background: #ffffff;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    position: relative;
+    z-index: 5;
+}
+.porto-cat-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+.porto-cat-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #FEF2F2;
+    color: #E70820;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 6px 20px;
+    border-radius: 999px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    border: 1px solid rgba(231, 8, 32, 0.15);
+}
+.porto-cat-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(28px, 4vw, 38px);
+    font-weight: 800;
+    color: #0F172A;
+    margin: 0;
+}
+.porto-cat-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 36px 30px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.porto-cat-item {
+    width: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.porto-cat-item:hover {
+    transform: translateY(-8px);
+}
+.porto-cat-icon-circle {
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #ffffff;
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.09);
+    transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.porto-cat-item:hover .porto-cat-icon-circle {
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.22);
+    transform: scale(1.08);
+}
+.porto-cat-name {
+    margin-top: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #334155;
+    text-align: center;
+    transition: color 0.2s ease;
+    line-height: 1.2;
+}
+.porto-cat-item:hover .porto-cat-name {
+    color: #E70820;
+}
+@media (max-width: 768px) {
+    .porto-cat-grid {
+        gap: 28px 18px;
+    }
+    .porto-cat-item {
+        width: 95px;
+    }
+    .porto-cat-icon-circle {
+        width: 66px;
+        height: 66px;
+        font-size: 24px;
+    }
+    .porto-cat-name {
+        font-size: 13px;
+    }
+}
+@media (max-width: 480px) {
+    .porto-cat-grid {
+        gap: 22px 12px;
+    }
+    .porto-cat-item {
+        width: 85px;
+    }
+    .porto-cat-icon-circle {
+        width: 58px;
+        height: 58px;
+        font-size: 20px;
+    }
+    .porto-cat-name {
+        font-size: 12px;
+    }
+}
+
 /* Popular Posts activity filters. */
 .porto-popular-posts .latest-piblished__play {
     display: none;
@@ -3114,6 +3230,179 @@ By pressing the subscribe button you agree to our
 				<div class="elementor-widget-container">
 					
         
+            <!-- Categories Section -->
+            <section class="porto-categories-section" id="explore-categories">
+                <div class="container custom-container">
+                    <div class="porto-cat-header">
+                        <span class="porto-cat-badge"><i class="fa-solid fa-layer-group"></i> Porto Directory</span>
+                        <h2 class="porto-cat-title">Explore by Category</h2>
+                    </div>
+
+                    <div class="porto-cat-grid">
+                        <a href="index.html#art" class="porto-cat-item">
+                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #EC4899 0%, #8B5CF6 100%);">
+                                <i class="fa-solid fa-palette"></i>
+                            </div>
+                            <span class="porto-cat-name">Art</span>
+                        </a>
+
+                        <a href="index.html#bars" class="porto-cat-item">
+                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);">
+                                <i class="fa-solid fa-martini-glass-citrus"></i>
+                            </div>
+                            <span class="porto-cat-name">Bars</span>
+                        </a>
+
+                        <a href="index.html#beaches" class="porto-cat-item">
+                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #06B6D4 0%, #0284C7 100%);">
+                                <i class="fa-solid fa-umbrella-beach"></i>
+                            </div>
+                            <span class="porto-cat-name">Beaches</span>
+                        </a>
+
+                        <a href="index.html#cafes" class="porto-cat-item">
+                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #84CC16 0%, #16A34A 100%);">
+                                <i class="fa-solid fa-mug-hot"></i>
+                            </div>
+                            <span class="porto-cat-name">Cafes</span>
+                        </a>
+
+                        <a href="index.html#drinks" class="porto-cat-item">
+                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #EF4444 0%, #F97316 100%);">
+                                <i class="fa-solid fa-glass-water"></i>
+                            </div>
+                            <span class="porto-cat-name">Drinks</span>
+                        </a>
+
+                        <a href="index.html#education" class="porto-cat-item">
+                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #6366F1 0%, #4F46E5 100%);">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <span class="porto-cat-name">Education</span>
+                        </a>
+
+                        <a href="index.html#finance" class="porto-cat-item">
+                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #10B981 0%, #059669 100%);">
+                                <i class="fa-solid fa-wallet"></i>
+                            </div>
+                            <span class="porto-cat-name">Finance</span>
+                        </a>
+
+                        <a href="index.html#food" class="porto-cat-item">
+                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #E70820 0%, #DC2626 100%);">
+                                <i class="fa-solid fa-utensils"></i>
+                            </div>
+                            <span class="porto-cat-name">Food</span>
+                        </a>
+
+                        <a href="index.html#kids" class="porto-cat-item">
+                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #F43F5E 0%, #FB7185 100%);">
+                                <i class="fa-solid fa-child"></i>
+                            </div>
+                            <span class="porto-cat-name">Kids</span>
+                        </a>
+
+                        <a href="index.html#language" class="porto-cat-item">
+                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%);">
+                                <i class="fa-solid fa-language"></i>
+                            </div>
+                            <span class="porto-cat-name">Language</span>
+                        </a>
+
+                        <a href="index.html#music" class="porto-cat-item">
+                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #A855F7 0%, #7E22CE 100%);">
+                                <i class="fa-solid fa-music"></i>
+                            </div>
+                            <span class="porto-cat-name">Music</span>
+                        </a>
+
+                        <a href="index.html#pastries" class="porto-cat-item">
+                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #F59E0B 0%, #B45309 100%);">
+                                <i class="fa-solid fa-cookie-bite"></i>
+                            </div>
+                            <span class="porto-cat-name">Pastries</span>
+                        </a>
+
+                        <a href="index.html#pets" class="porto-cat-item">
+                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #14B8A6 0%, #0D9488 100%);">
+                                <i class="fa-solid fa-paw"></i>
+                            </div>
+                            <span class="porto-cat-name">Pets</span>
+                        </a>
+
+                        <a href="index.html#places" class="porto-cat-item">
+                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #0EA5E9 0%, #0369A1 100%);">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <span class="porto-cat-name">Places</span>
+                        </a>
+
+                        <a href="index.html#restaurants" class="porto-cat-item">
+                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #E11D48 0%, #9F1239 100%);">
+                                <i class="fa-solid fa-plate-wheat"></i>
+                            </div>
+                            <span class="porto-cat-name">Restaurants</span>
+                        </a>
+
+                        <a href="index.html#rooftop" class="porto-cat-item">
+                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #64748B 0%, #334155 100%);">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <span class="porto-cat-name">Rooftop</span>
+                        </a>
+
+                        <a href="index.html#services" class="porto-cat-item">
+                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #6366F1 0%, #4338CA 100%);">
+                                <i class="fa-solid fa-concierge-bell"></i>
+                            </div>
+                            <span class="porto-cat-name">Services</span>
+                        </a>
+
+                        <a href="index.html#sport" class="porto-cat-item">
+                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #10B981 0%, #047857 100%);">
+                                <i class="fa-solid fa-person-running"></i>
+                            </div>
+                            <span class="porto-cat-name">Sport</span>
+                        </a>
+
+                        <a href="index.html#traditions" class="porto-cat-item">
+                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #D97706 0%, #B45309 100%);">
+                                <i class="fa-solid fa-wine-glass"></i>
+                            </div>
+                            <span class="porto-cat-name">Traditions</span>
+                        </a>
+
+                        <a href="index.html#trips" class="porto-cat-item">
+                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #0284C7 0%, #1E3A8A 100%);">
+                                <i class="fa-solid fa-route"></i>
+                            </div>
+                            <span class="porto-cat-name">Trips</span>
+                        </a>
+
+                        <a href="index.html#vegetarian" class="porto-cat-item">
+                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #22C55E 0%, #15803D 100%);">
+                                <i class="fa-solid fa-leaf"></i>
+                            </div>
+                            <span class="porto-cat-name">Vegetarian</span>
+                        </a>
+
+                        <a href="index.html#wine" class="porto-cat-item">
+                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #881337 0%, #4C0519 100%);">
+                                <i class="fa-solid fa-wine-bottle"></i>
+                            </div>
+                            <span class="porto-cat-name">Wine</span>
+                        </a>
+
+                        <a href="index.html#work" class="porto-cat-item">
+                            <div class="porto-cat-icon-circle" style="background: linear-gradient(135deg, #475569 0%, #0F172A 100%);">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <span class="porto-cat-name">Work</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
             <!-- latest-updates -->
             <section class="latest-updates-3__area grey-bg section-space-bottom porto-insta-world">
                 <div class="container custom-container">
