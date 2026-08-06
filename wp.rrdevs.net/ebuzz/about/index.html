@@ -2,7 +2,7 @@
     <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
-    <title>Porto Expats</title>
+    <title>About Porto Expats</title>
 <meta name="robots" content="noindex, nofollow">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="alternate" type="application/rss+xml" title="ebuzz » Feed" href="https://wp.rrdevs.net/ebuzz/feed/">
@@ -898,40 +898,6 @@ background: #F3F4F6 !important;
     .porto-footer-join { padding: 24px 15px 0; }
     .porto-footer-join .join-us-4__wrapper { padding: 26px 22px; }
 }
-/* Fix copyright bar: hardcode background since Elementor JS doesn't run in static HTML */
-/* --e-global-color-secondary is #191717 per post-6_ver=1785400122.css */
-.elementor-862 .elementor-element.elementor-element-6342ca7:not(.elementor-motion-effects-element-type-background) {
-    background-color: #191717 !important;
-}
-.elementor-862 .elementor-element.elementor-element-0b811c6:not(.elementor-motion-effects-element-type-background) {
-    background-color: #191717 !important;
-}
-
-/* Ensure floating back-to-top button does not overlap footer copyright links */
-.progress-wrap {
-    bottom: 25px !important;
-    right: 25px !important;
-    z-index: 9999 !important;
-}
-.elementor-element-40cafe5,
-.elementor-element-fa662f8,
-.elementor-element-fa662f8 .elementor-icon-list-items.elementor-inline-items {
-    padding-right: 85px !important;
-}
-@media (max-width: 768px) {
-    .elementor-element-0b811c6 {
-        padding-bottom: 75px !important;
-    }
-    .elementor-element-40cafe5,
-    .elementor-element-fa662f8,
-    .elementor-element-fa662f8 .elementor-icon-list-items.elementor-inline-items {
-        padding-right: 0 !important;
-    }
-    .progress-wrap {
-        bottom: 20px !important;
-        right: 20px !important;
-    }
-}
 @media (max-width: 767px) {
     .porto-hero {
         min-height: 530px;
@@ -939,6 +905,66 @@ background: #F3F4F6 !important;
     }
     .porto-hero .banner-section__content {
         padding: 26px 24px 18px;
+    }
+}
+.porto-about-shell {
+    background: linear-gradient(135deg, #f8efe7 0%, #fdf8f2 100%);
+    padding: 72px 0 88px;
+}
+.porto-about-page {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(17, 24, 39, 0.08);
+    border-radius: 24px;
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 48px 40px;
+}
+.porto-about-page .porto-about-kicker {
+    color: #d84b60;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.24em;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+.porto-about-page h1 {
+    color: #111827;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(32px, 3vw, 46px);
+    line-height: 1.16;
+    margin-bottom: 20px;
+}
+.porto-about-page p,
+.porto-about-page li {
+    color: #374151;
+    font-size: 17px;
+    line-height: 1.8;
+}
+.porto-about-page ul {
+    margin: 16px 0 0 22px;
+    padding: 0;
+}
+.porto-about-page strong {
+    color: #111827;
+}
+.porto-about-page .porto-about-cta {
+    color: #111827;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 24px;
+}
+@media (max-width: 767px) {
+    .porto-about-shell {
+        padding: 40px 0 56px;
+    }
+    .porto-about-page {
+        padding: 32px 22px;
+    }
+    .porto-about-page p,
+    .porto-about-page li {
+        font-size: 16px;
     }
 }		</style>
 		<style id="kirki-inline-styles">.progress-wrap::after{background:#DC2626;color:#ffffff;}.sk-three-bounce{background:rgba(0, 0, 0);}.sk-three-bounce .sk-child{background:rgba(255, 255, 255);}.breadcrumb-section__area .breadcrumb-section__content .breadcrumb-section__title{color:#0f0f0f;}.breadcrumb-section__area.grey-bg{background:#ffffff;background-color:#ffffff;}@media (max-width: 767px){.breadcrumb-section__content{padding-top:37px;padding-bottom:37px;}}@media (min-width: 768px) and (max-width: 1023px){.breadcrumb-section__content{padding-top:37px;padding-bottom:37px;}}@media (min-width: 1024px){.breadcrumb-section__content{padding-top:52px;padding-bottom:52px;}}</style></head>
@@ -1113,7 +1139,7 @@ background: #F3F4F6 !important;
 	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-7041" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7041 nav-item"><a title="Modern Blog" href="../modern-blog/index.html" class="dropdown-items">Modern Blog</a></li>
 </ul>
 </li>
-<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2251" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2251 nav-item"><a title="About" href="about.html" class="nav-links">About</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2251" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2251 nav-item"><a title="About" href="../about/index.html" class="nav-links">About</a></li>
 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-7605" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7605 nav-item"><a title="Partnerships" href="../news/index.html" class="nav-links">Partnerships</a>
 <ul class="tp-submenu sub-menu" role="menu">
 	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-7606" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7606 nav-item"><a title="News" href="../news/index.html" class="dropdown-items">News</a></li>
@@ -1265,44 +1291,24 @@ background: #F3F4F6 !important;
     <div id="smooth-wrapper">
         <div id="smooth-content">
             		<div data-elementor-type="wp-page" data-elementor-id="4705" class="elementor elementor-4705">
-				<div class="elementor-element elementor-element-c9aaed8 e-con-full e-flex e-con e-parent" data-id="c9aaed8" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-				<div class="elementor-element elementor-element-d0b921c elementor-widget elementor-widget-ebuzz_blog_post" data-id="d0b921c" data-element_type="widget" data-e-type="widget" data-widget_type="ebuzz_blog_post.default">
-				<div class="elementor-widget-container">
-					
-        
-            
-            <!-- banner-section -->
-            <section class="banner-section__area">
-
-                                                                    <div class="post-bg banner-section__wrapper porto-hero" data-background="../wp-content/uploads/2026/03/head.webp">
-                                <div class="container custom-container">
-                                    <div class="row">
-                                        <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-8">
-
-                                            <div class="banner-section__item wow fadeInUp" data-wow-duration="0.7s" data-wow-delay="0.2s">
-                                                <div class="banner-section__content">
-                                                    <div class="new-post-3__info">
-                                                        <h3 class="new-post-3__title">
-                                                            <a href="../how-sustainable-tourism-is-changing-the-way-we-see-the-world-2/index.html">
-                                                                How Sustainable Tourism Is Changing the Way We See the World                                                            </a>
-                                                        </h3>
-
-                                                                                                                    <p class="new-post-3__dec custom_description">
-                                                                Quickly predominate enabled technology and web-enabled schemas. Completely evisculate diverse communities whereas pandemic data. Quickly build covalent data after turnkey…                                                            </p>
-                                                        
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                                                    </section>
-
-        
-				</div>
-				</div>
+				<div class="elementor-element elementor-element-3c4df52 porto-about-shell e-con-full e-flex e-con e-parent" data-id="3c4df52" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+						<section class="porto-about-page">
+							<p class="porto-about-kicker">About PortoExpats.pt</p>
+							<h1>Olá and welcome to PortoExpats.pt!</h1>
+							<p>My name is Gabriela, and like many of you, I fell in love with Porto – a city that has truly captured my heart. I’m originally from Slovakia, and my journey with Porto began on May 30, 2013. Some say 13 is an unlucky number, but for me, it marked the beginning of something beautiful. It was the year I landed at Francisco Sá Carneiro Airport for the first time – to visit someone special I met during Erasmus. That love story continues to this day… and so does my love for Porto.</p>
+							<p>Since then, I’ve lived in Porto (with a few breaks) for over 5 years. I got married here and slowly gathered a wealth of knowledge – not just about the city, but about its food, people, language, traditions, local products, and how to truly enjoy life here.</p>
+							<p>People often ask me: “Do you feel more like an expat or a local?” Honestly, I feel a bit 😊 (or rather a lot) of both. And that’s exactly why I created this space – to connect expats with locals, and help both communities learn from, respect and support one another.</p>
+							<p>This page is for everyone:</p>
+							<ul>
+								<li>living in Porto as an expat or a local,</li>
+								<li>planning to move here,</li>
+								<li>visiting for a few days,</li>
+								<li>or just dreaming about coming one day…</li>
+							</ul>
+							<p class="porto-about-cta">You’re welcome here. <strong>Bem-vindo!</strong> ❤️</p>
+						</section>
+					</div>
 				</div>
 		<div class="elementor-element elementor-element-4145bf4 porto-latest-updates e-flex e-con-boxed e-con e-parent" data-id="4145bf4" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
