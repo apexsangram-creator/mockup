@@ -1203,13 +1203,68 @@ background: #F3F4F6 !important;
     .porto-footer-join { padding: 24px 15px 0; }
     .porto-footer-join .join-us-4__wrapper { padding: 26px 22px; }
 }
-/* Fix copyright bar: hardcode background since Elementor JS doesn't run in static HTML */
-/* --e-global-color-secondary is #191717 per post-6_ver=1785400122.css */
-.elementor-862 .elementor-element.elementor-element-6342ca7:not(.elementor-motion-effects-element-type-background) {
-    background-color: #191717 !important;
+/* Wavy Flowing Tinted Glassmorphism Main Footer Background */
+.elementor-862 .elementor-element.elementor-element-6342ca7:not(.elementor-motion-effects-element-type-background),
+.elementor-862 .elementor-element.elementor-element-42609a8:not(.elementor-motion-effects-element-type-background) {
+    background: linear-gradient(135deg, #0b1120 0%, #151a33 40%, #0d1b2a 100%) !important;
+    position: relative !important;
+    isolation: isolate !important;
+    overflow: hidden !important;
 }
+
+/* Frosted Ambient Tint & Wavy SVG Flowing Backdrop for Main Footer */
+.elementor-862 .elementor-element.elementor-element-6342ca7::before,
+.elementor-862 .elementor-element.elementor-element-42609a8::before {
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 !important;
+    background-image: 
+        radial-gradient(circle at 10% 20%, rgba(231, 8, 32, 0.35) 0%, transparent 45%),
+        radial-gradient(circle at 90% 75%, rgba(6, 147, 227, 0.35) 0%, transparent 45%),
+        radial-gradient(circle at 50% 100%, rgba(155, 81, 224, 0.25) 0%, transparent 50%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='0.06' d='M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,138.7C672,139,768,181,864,197.3C960,213,1056,203,1152,176C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E") !important;
+    background-size: cover, cover, cover, cover !important;
+    background-position: center !important;
+    backdrop-filter: blur(16px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+    z-index: -1 !important;
+    pointer-events: none !important;
+}
+
+/* Distinct Deep Midnight Onyx & Crimson Glow Copyright Bar */
 .elementor-862 .elementor-element.elementor-element-0b811c6:not(.elementor-motion-effects-element-type-background) {
-    background-color: #191717 !important;
+    background: linear-gradient(135deg, #070A10 0%, #0F172A 50%, #06080E 100%) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+    position: relative !important;
+    isolation: isolate !important;
+    overflow: hidden !important;
+}
+.elementor-862 .elementor-element.elementor-element-0b811c6::before {
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 !important;
+    background: radial-gradient(circle at 30% 0%, rgba(231, 8, 32, 0.22) 0%, transparent 65%),
+                radial-gradient(circle at 80% 100%, rgba(6, 147, 227, 0.18) 0%, transparent 65%) !important;
+    pointer-events: none !important;
+    z-index: 0 !important;
+}
+.elementor-862 .elementor-element.elementor-element-0b811c6 .e-con-inner {
+    position: relative !important;
+    z-index: 1 !important;
+}
+.elementor-element-7b3dd6c span {
+    color: #FDE68A !important;
+    font-weight: 500 !important;
+}
+
+/* Glass highlights and dividers */
+.elementor-862 .elementor-element.elementor-element-6342ca7 {
+    border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+    box-shadow: 0 -15px 40px rgba(0, 0, 0, 0.25) !important;
+}
+.elementor-862 .elementor-element.elementor-element-42609a8 {
+    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
 }
 
 /* Sleek, Elegant & Vibrant Footer Subscribe Form */
